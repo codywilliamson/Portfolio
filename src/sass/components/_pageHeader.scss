@@ -1,0 +1,13 @@
+.pageHeaderContainer {
+    height: 30rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.mainTitle {
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: $white;
+    font-size: 20em;
+}

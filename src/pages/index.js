@@ -4,12 +4,17 @@ import PageHeader from '../components/PageHeader'
 import TextSection from '../components/TextSection'
 import ProductGallery from '../components/ProductGallery'
 import LatestNews from '../components/LatestNews'
+import homeHeader from '../assets/headers/homeHeader.png'
 
 const Home = () => {
     return (
         <Layout>
 
-            <PageHeader title="yooneek" headerStyle="mainTitle" />
+            <PageHeader 
+                title="yooneek" 
+                headerStyle="mainTitle" 
+                bgImage={homeHeader}
+            />
 
             <TextSection 
                 title="The Yooneek Experience" 

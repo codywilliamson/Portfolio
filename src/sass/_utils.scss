@@ -33,6 +33,12 @@ body, html {
     background: $white;  
 }
 
+.flexHardCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 // hexagon
 .hexagon {
     position: relative;
