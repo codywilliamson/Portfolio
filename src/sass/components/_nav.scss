@@ -1,0 +1,41 @@
+.navigation {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background: $white;
+}
+
+.navContainer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    color: $orange;
+}
+
+.logoContainer {
+    flex-basis: 50%;
+}
+
+.navLogo {
+    font-weight: 800;
+    font-size: $title-font-size;
+}
+
+.logoTM {
+    font-size: .3em;
+    font-weight: 400;
+}
+
+.menuContainer {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    text-transform: uppercase;
+    font-size: .9em;
+    text-align: center;
+    font-weight: 800;
+    letter-spacing: .1em;
+}
+
