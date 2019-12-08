@@ -6,12 +6,12 @@
     background-repeat: no-repeat;
 }
 
-.mainTitle {
+.mainTitle { 
     color: transparent;
     -webkit-text-stroke-width: 3px;
     -webkit-text-stroke-color: $white;
     font-size: 18em;
-    font-family: $font;
+    font-family: Avenir;
     font-weight: 800;
     transition: all .3s ease-in;
 }

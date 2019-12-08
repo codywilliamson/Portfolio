@@ -6,7 +6,7 @@
     src: url("MinionPro-Regular.ttf") format("truetype");
     font-display: swap;
 }
-
+/* 
 @font-face {
     font-family: "Avenir";
     font-weight: 400;
@@ -37,4 +37,4 @@
     font-style: normal;
     src: url("Avenir-Light-07.ttf") format("truetype");
     font-display: swap;
-}
+} */

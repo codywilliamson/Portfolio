@@ -14,12 +14,13 @@ const Home = () => {
                 title="yooneek" 
                 headerStyle="mainTitle" 
                 bgImage={homeHeader}
+                true
             />
 
             <TextSection 
                 title="The Yooneek Experience" 
                 hrClass="basicHR"
-                message="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel rerum expedita aut. Voluptatem, nesciunt? Illo fugit pariatur commodi? Sapiente, quasi."
+                message="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel rerum expedita aut. Voluptatem, nesciunt? Illo fugit pariatur commodi? Sapiente, quasi. Illo fugit pariatur commodi? Sapiente, quasi. Illo fugit pariatur commodi? Sapiente, quasi. Illo fugit pariatur commodi? Sapiente, quasi."
                 bgClass="whiteBg"
                 display="none"
                 />

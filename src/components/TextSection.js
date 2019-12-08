@@ -13,7 +13,7 @@ const TextSection = (props) => {
 
             <hr className={props.hrClass} />
 
-            <p className="textSectionMsg">
+            <p className="textSectionMsg"> 
                 {props.message}
             </p> 
         </section>

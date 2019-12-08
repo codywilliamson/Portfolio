@@ -20,8 +20,8 @@
 .textSectionTitle {
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 1em;
-    letter-spacing: 1px;
+    font-size: .9em;
+    letter-spacing: 2px;
 }
 
 .basicHR {
@@ -33,5 +33,16 @@
 }
 
 .textSectionMsg {
-    font-family: 'Minion Pro';
+    font-family: 'Minion Pro', $font;
+    text-align: center;
+    width: 500px;
+    line-height: 2;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+@media (max-width: 510px) {
+    .textSectionMsg {
+        width: 320px;
+    }
 }
