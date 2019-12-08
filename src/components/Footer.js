@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <footer className="siteFooterContainer">
             <div className="footerNavContainer">
-                <h1 className="footerLogo">
+                <h1 className="footerLogo fadeIn">
                     yooneek<sub className="logoTM">tm</sub>
                 </h1>
 

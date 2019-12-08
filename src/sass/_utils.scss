@@ -19,6 +19,7 @@ $light-grey: #dcdcdc;
 
 // base
 $font: Avenir, 'Helvetica Neue', system-ui, Helvetica, Arial, sans-serif;
+$text-section-font: "Minion Pro", Avenir, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $body-font-size: 1em;
 $title-font-size: 2.5em;
 
@@ -45,39 +46,20 @@ body, html {
     justify-content: center;
 }
 
-// hexagon
-.hexagon {
-    position: relative;
-    width: 175px; 
-    height: 101.04px;
-    background-color: #171717;
-    margin: 50.52px 0;
-    border-left: solid 5px #ffffff;
-    border-right: solid 5px #ffffff;
+.minionPro {
+    font-family: $text-section-font;
 }
 
-.hexagon:before,
-.hexagon:after {
-    content: "";
-    position: absolute;
-    z-index: 1;
-    width: 123.74px;
-    height: 123.74px;
-    -webkit-transform: scaleY(0.5774) rotate(-45deg);
-    -ms-transform: scaleY(0.5774) rotate(-45deg);
-    transform: scaleY(0.5774) rotate(-45deg);
-    background-color: inherit;
-    left: 20.6282px;
+.fadeIn {
+    animation: fadeIn 1.3s ease-in-out;
 }
 
-.hexagon:before {
-    top: -61.8718px;
-    border-top: solid 7.0711px #ffffff;
-    border-right: solid 7.0711px #ffffff;
-}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
 
-.hexagon:after {
-    bottom: -61.8718px;
-    border-bottom: solid 7.0711px #ffffff;
-    border-left: solid 7.0711px #ffffff;
+    100% {
+        opacity: 1;
+    }
 }

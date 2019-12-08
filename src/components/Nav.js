@@ -21,16 +21,16 @@ const Nav = () => {
             <nav className="navContainer">
 
                 <div className="logoContainer">
-                    <h1 className="navLogo">
+                    <h1 className="navLogo fadeIn">
                         yooneek<sub className="logoTM">tm</sub>
                     </h1>
                 </div>
 
                 <div className="menuContainer">
-                    <Link to="/products" className="menuItem">Products</Link>
-                    <Link to="/infrared" className="menuItem">Far Infrared</Link>
-                    <Link to="/about" className="menuItem">About</Link>
-                    <Link to="/contact" className="menuItem">Contact Us</Link>
+                    <Link to="/products" className="menuItem fadeIn">Products</Link>
+                    <Link to="/infrared" className="menuItem fadeIn">Far Infrared</Link>
+                    <Link to="/about" className="menuItem fadeIn">About</Link>
+                    <Link to="/contact" className="menuItem fadeIn">Contact Us</Link>
                 </div>
 
                 <div className="navMenuBtnContainer flexHardCenter">

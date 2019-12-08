@@ -10,6 +10,9 @@ module.exports = {
   plugins: [
     // sass support
     'gatsby-plugin-sass',
+    // for optimizing & transforming images using graphql
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
     // for sourcing data from local filesystem
     // check https://www.gatsbyjs.org/packages/gatsby-source-filesystem/?=gatsby%20source
     {
