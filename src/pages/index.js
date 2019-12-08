@@ -20,7 +20,7 @@ const Home = () => {
                 title="The Yooneek Experience" 
                 hrClass="basicHR"
                 message="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel rerum expedita aut. Voluptatem, nesciunt? Illo fugit pariatur commodi? Sapiente, quasi."
-                bgClass="bgWhite"
+                bgClass="whiteBg"
                 display="none"
                 />
 

@@ -15,7 +15,7 @@ const TextSection = (props) => {
 
             <p className="textSectionMsg">
                 {props.message}
-            </p>
+            </p> 
         </section>
 
     )

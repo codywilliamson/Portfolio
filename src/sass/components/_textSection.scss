@@ -1,0 +1,37 @@
+.whiteBg {
+    background: $white;
+    color: $orange;
+}
+
+.orangeBg {
+    background: $orange;
+    color: $white
+}
+
+.textSectionContainer {
+    font-family: "Minion Pro", Avenir, "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 8rem 2rem;
+}
+
+.textSectionTitle {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1em;
+    letter-spacing: 1px;
+}
+
+.basicHR {
+    width: 200px;
+    background: $orange;
+    height: 2px;
+    border: 0;
+    margin: 1.5rem 0;
+}
+
+.textSectionMsg {
+    font-family: 'Minion Pro';
+}

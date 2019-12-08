@@ -1,41 +1,240 @@
 .navigation {
-    width: 100%;
-    position: fixed;
-    top: 0;
-    background: $white;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background: $white;
 }
 
 .navContainer {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    justify-content: space-between;
-    padding: 1rem 2rem;
-    color: $orange;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0.5rem 3rem;
+  color: $orange;
 }
 
 .logoContainer {
-    flex-basis: 50%;
+  flex-basis: 35%;
 }
 
 .navLogo {
-    font-weight: 800;
-    font-size: $title-font-size;
+  font-weight: 800;
+  letter-spacing: -4px;
+  font-size: 3.1em;
 }
 
 .logoTM {
-    font-size: .3em;
-    font-weight: 400;
+  font-size: 0.2em;
+  font-weight: 800;
 }
 
 .menuContainer {
-    flex-basis: 50%;
-    display: flex;
-    justify-content: space-evenly;
-    text-transform: uppercase;
-    font-size: .9em;
-    text-align: center;
-    font-weight: 800;
-    letter-spacing: .1em;
+  flex-basis: 65%;
+  display: flex;
+  justify-content: space-evenly;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  font-family: "Minion Pro";
 }
 
+// menu icon
+// .desktop {
+//   display: none;
+// }
+
+.navHamburger {
+    cursor: pointer;
+    display: none;
+}
+
+.hamburgerBar {
+  display: block;
+  width: 100%;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  height: 8px;
+  background: $orange;
+  transition: all 0.75s;
+  position: relative;
+}
+
+.hamburgerBar + .hamburgerBar {
+  margin-top: 10px;
+}
+
+.active .hamburgerBar {
+    background: $white;
+}
+
+.active .hamburgerBar:nth-child(1) {
+  animation: ease 0.75s top forwards;
+}
+
+.notActive .hamburgerBar:nth-child(1) {
+  animation: ease 0.75s top-2 forwards;
+}
+
+.active .hamburgerBar:nth-child(2) {
+  animation: ease 0.75s scaled forwards;
+}
+
+.notActive .hamburgerBar:nth-child(2) {
+  animation: ease 0.75s scaled-2 forwards;
+}
+
+.active .hamburgerBar:nth-child(3) {
+  animation: ease 0.75s bottom forwards;
+}
+
+.notActive .hamburgerBar:nth-child(3) {
+  animation: ease 0.75s bottom-2 forwards;
+}
+
+@keyframes top {
+  0% {
+    top: 0;
+    transform: rotate(0);
+  }
+  50% {
+    top: 18px;
+    transform: rotate(0);
+  }
+  100% {
+    top: 18px;
+    transform: rotate(45deg);
+  }
+}
+
+@keyframes top-2 {
+  0% {
+    top: 18px;
+    transform: rotate(45deg);
+  }
+  50% {
+    top: 18px;
+    transform: rotate(0deg);
+  }
+  100% {
+    top: 0;
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes bottom {
+  0% {
+    bottom: 0;
+    transform: rotate(0);
+  }
+  50% {
+    bottom: 18px;
+    transform: rotate(0);
+  }
+  100% {
+    bottom: 18px;
+    transform: rotate(135deg);
+  }
+}
+
+@keyframes bottom-2 {
+  0% {
+    bottom: 18px;
+    transform: rotate(135deg);
+  }
+  50% {
+    bottom: 18px;
+    transform: rotate(0);
+  }
+  100% {
+    bottom: 0;
+    transform: rotate(0);
+  }
+}
+
+@keyframes scaled {
+  50% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+@keyframes scaled-2 {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes slideNavIn {
+    0% {
+        right: -5000px;
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+        right: 0;
+    }
+}
+
+@media (max-width: 691px) {
+  .menuContainer {
+    position: absolute;
+    transform: translateX(-5000px);
+    transition: all .75s ease-in-out;
+    flex-basis: 100%;
+    display: flex;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+    color: $white;
+    font-size: 1.5em;
+    z-index: -1;
+    text-align: left;
+    padding: 1rem 2rem;
+    background: $orange;
+  }
+
+  .menuContainer.mobile {
+    transform: translateX(0);
+  }
+
+  .logoContainer, .navMenuBtnContainer {
+      flex-basis: 50%;
+  }
+
+  .navMenuBtnContainer {
+    justify-content: flex-end;
+  }
+
+  .navLogo.menuActive {
+    transition: all 1s ease-in-out;
+    z-index: 5000;
+    color: $white;
+  }
+
+  .navHamburger {
+      display: block;
+      width: 55px;
+  }
+}
+
+@media (max-width: 380px) {
+  .navContainer {
+    padding: 1rem;
+  }
+}

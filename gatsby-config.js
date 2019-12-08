@@ -18,6 +18,17 @@ module.exports = {
         name: 'src',
         path: `${__dirname}/src/`
       }
+    },
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        custom: {
+          families: [
+            'Minion Pro'
+          ],
+          urls: ['fonts.css']
+        }
+      }
     }
   ],
   siteMetadata: {

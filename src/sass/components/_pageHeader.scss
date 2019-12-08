@@ -1,5 +1,6 @@
 .pageHeaderContainer {
     height: 30rem;
+    max-height: 480px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -7,7 +8,45 @@
 
 .mainTitle {
     color: transparent;
-    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-width: 3px;
     -webkit-text-stroke-color: $white;
-    font-size: 20em;
+    font-size: 18em;
+    font-family: $font;
+    font-weight: 800;
+    transition: all .3s ease-in;
+}
+
+@media (max-width: 1155px) {
+    .mainTitle {
+        font-size: 13em;
+    }
+}
+
+@media (max-width: 850px) {
+    .mainTitle {
+        font-size: 10em;
+    }
+}
+
+@media (max-width: 660px) {
+    .mainTitle {
+        font-size: 8em;
+    }
+
+    .pageHeaderContainer {
+        height: 20rem;
+    }
+}
+
+@media (max-width: 525px) {
+    .mainTitle {
+        -webkit-text-stroke-width: 1px;
+        font-size: 6em;
+    }
+}
+
+@media (max-width: 400px) {
+    .mainTitle {
+        font-size: 4em;
+    }
 }
