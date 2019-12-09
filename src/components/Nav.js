@@ -3,6 +3,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 
 const Nav = () => {
+    
     function openMobileNav() {
         let hamburger = document.getElementById('navHamburger');
         let menu = document.querySelector('.menuContainer');
@@ -18,12 +19,14 @@ const Nav = () => {
     return (
         
         <header className="navigation">
-            <nav className="navContainer">
+            <nav id="navContainer" className="navContainer">
 
                 <div className="logoContainer">
-                    <h1 className="navLogo fadeIn">
-                        yooneek<sub className="logoTM">tm</sub>
-                    </h1>
+                    <Link to="/">
+                        <h1 className="navLogo fadeIn">
+                            yooneek<sub className="logoTM">tm</sub>
+                        </h1>
+                    </Link>
                 </div>
 
                 <div className="menuContainer">

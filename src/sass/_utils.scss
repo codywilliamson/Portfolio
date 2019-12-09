@@ -54,6 +54,10 @@ body, html {
     animation: fadeIn 1.3s ease-in-out;
 }
 
+.sr-only {
+    display: none;
+}
+
 @keyframes fadeIn {
     0% {
         opacity: 0;

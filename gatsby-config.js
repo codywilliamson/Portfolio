@@ -23,6 +23,13 @@ module.exports = {
       }
     },
     {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'products',
+        path: `${__dirname}/src/products/`
+      }
+    },
+    {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
         custom: {

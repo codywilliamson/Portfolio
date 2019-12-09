@@ -6,22 +6,22 @@ import Img from 'gatsby-image'
 const ProductGallery = (props) => {
     // use graphql to retrieve all images in src/products
     // use gatsby-transformer-sharp to dynamically resize images
-    // 
+    // specify products/ dir to only retrieve images from there
     const images = useStaticQuery(graphql`
-        query {
-            allImageSharp {
-                edges {
-                    node {
-                        fixed(width: 225, height: 225) {
-                            width
-                            height
-                            src
-                            tracedSVG
-                          }
-                    }
+    query  {
+        allFile(filter: {relativeDirectory: {eq: "products"}}) {
+          edges {
+            node {
+                id
+                childImageSharp {
+                    fixed(width: 225, height: 225) {
+                    ...GatsbyImageSharpFixed
                 }
+              }
             }
+          }
         }
+      }
     `)
 
     return (
@@ -36,13 +36,14 @@ const ProductGallery = (props) => {
 
                 <ul className="productImagesList">
                     {// map through first 5 items of returned data
-                    images.allImageSharp.edges.slice(0, 5).map((edge) => {
+                    images.allFile.edges.slice(0, 5).map((edge) => {
                         return (
-                            <li className="productImageItem">
+                            // important to give both the li AND the <Img> component a unique key
+                            <li key={edge.node.id} className="productImageItem">
                                 <Img
                                     className="productImage"
-                                    fixed={edge.node.fixed}
-                                    alt="YOONEEK latest product images"
+                                    fixed={edge.node.childImageSharp.fixed}
+                                    key={edge.node.id}
                                  />
                             </li>
                         )

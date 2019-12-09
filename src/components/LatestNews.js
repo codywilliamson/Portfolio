@@ -3,14 +3,14 @@ import { Link } from 'gatsby'
 
 const LatestNews = () => {
     return (
-        <section className="latestNewsContainer">
-            <h3 className="textSectionTitle fadeIn">
+        <section className="latestNewsContainer flexHardCenter">
+            <h3 className="textSectionTitle minionPro fadeIn">
                 Latest News
             </h3>
 
-            <hr className="fullWidthHR fadeIn"/>
+            {/* <hr className="fullWidthHR fadeIn"/> */}
 
-            <div className="latestNewsImgTextContainer">
+            <div className="latestNewsImgTextContainer minionPro">
                 <div className="latestNewsImgContainer fadeIn">
                     <Link to="/slug">
                         <img src="https://via.placeholder.com/610x222" alt="" className="latestNewsImg"/>
@@ -19,13 +19,13 @@ const LatestNews = () => {
 
                 <div className="latestNewsTextContainer">
                     <Link to="/slug">
-                        <h4 className="latestNewsTitle fadeIn">
+                        <h3 className="latestNewsTitle fadeIn">
                             Lorem ipsum dolor sit amet.
-                        </h4>
+                        </h3>
                     </Link>
 
                     <p className="latestNewsText fadeIn">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente excepturi magnam debitis quos reprehenderit quam corporis laboriosam. Sunt expedita, maiores atque consectetur asperiores commodi, id nemo modi iusto nisi illo.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae eos eius, perspiciatis hic ipsam libero nemo eaque, porro sit facere laudantium quisquam corporis odio optio repudiandae eveniet id eligendi atque.
                     </p>
                 </div>
             </div>

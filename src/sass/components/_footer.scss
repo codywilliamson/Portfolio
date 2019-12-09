@@ -1,0 +1,67 @@
+.siteFooterContainer {
+    background: $orange;
+    text-align: center;
+    color: $white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 3rem 0;
+
+    .navLogo {
+        font-size: 4em;
+        margin: 1rem 0 2rem 0;
+
+        .logoTM {
+            font-size: .3em;
+        }
+    }
+
+    * {
+        margin: 1.3rem 0;
+        font-family: $font;
+        font-weight: bold;
+        font-size: .95em;
+    }
+}
+
+.footerNavItem + .footerNavItem:before {
+    margin: 0 1rem;
+    content: " / ";
+}
+
+.footerNavItem {
+    text-transform: uppercase;
+    font-size: 1.1em;
+}
+
+.socialIcon {
+    width: 35px;
+    margin: 0 1rem;
+}
+
+.emailInput {
+    width: 250px;
+    text-align: center;
+    color: $orange;
+    outline: 0;
+    border: 1px solid $white;
+    padding: .3rem 0;
+
+    &::placeholder {
+        // 508 compliant? 
+        color: $orange;
+    }
+
+    &:active {
+        outline: 0;
+    }
+}
+
+.emailSignupButton {
+    border: 1px solid $white;
+    color: $white;
+    background: $orange;
+    padding: .3rem .5rem;
+    text-transform: uppercase;
+}
