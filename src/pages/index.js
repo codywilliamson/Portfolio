@@ -30,7 +30,6 @@ const Home = () => {
 
             <ProductGallery 
                 title="Featured Products"
-                hrClass="basicHR"
                 showHR="none"/>
 
             <TextSection
