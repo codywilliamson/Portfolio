@@ -30,7 +30,9 @@ const Home = () => {
 
             <ProductGallery 
                 title="Featured Products"
-                showHR="none"/>
+                showHR="none"
+                
+                />
 
             <TextSection
                 title="Far Infrared Benefits"

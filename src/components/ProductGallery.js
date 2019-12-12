@@ -1,8 +1,19 @@
 import React from 'react'
-import HomeProducts from './HomeProducts'
+import HomeProducts from './productGalleryQueries/HomeProducts'
+import LeggingsProducts from './productGalleryQueries/LeggingsProducts'
+import ExtrasProducts from './productGalleryQueries/ExtrasProducts'
 
 
 const ProductGallery = (props) => {
+    let productToShow;
+
+    if (props.whichProduct === 'Leggings') {
+        productToShow = <LeggingsProducts />
+    } else if (props.whichProduct === 'Extras') {
+        productToShow = <ExtrasProducts />
+    } else {
+        productToShow = <HomeProducts />
+    }
 
     return (
         <section className="productGalleryContainer flexHardCenter">
@@ -16,7 +27,7 @@ const ProductGallery = (props) => {
 
             <div className="productImagesContainer">
 
-                <HomeProducts />
+                {productToShow}
 
             </div>
 

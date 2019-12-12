@@ -8,33 +8,42 @@ const HomeProducts = () => {
   // specify products/ dir to only retrieve images from there
   const images = useStaticQuery(graphql`
     query {
-      allFile(filter: { sourceInstanceName: { eq: "products" } }) {
-        edges {
-          node {
-            id
-            childImageSharp {
-              fixed(width: 225, height: 225) {
-                ...GatsbyImageSharpFixed
+        allMarkdownRemark {
+          edges {
+            node {
+              id
+              frontmatter {
+                title
+                productImage {
+                  childImageSharp {
+                    fixed(width: 225, height: 225) {
+                      ...GatsbyImageSharpFixed
+                    }
+                  }
+                }
               }
             }
           }
         }
       }
-    }
+      
   `)
 
   return (
     <ul className="productImagesList">
       {// map through first 5 items of returned data
-      images.allFile.edges.slice(0, 5).map(edge => {
+      images.allMarkdownRemark.edges.slice(0, 5).map(edge => {
         return (
           // important to give both the li AND the <Img> component a unique key
           <li key={edge.node.id} className="productImageItem">
             <Img
               className="productImage"
-              fixed={edge.node.childImageSharp.fixed}
+              fixed={edge.node.frontmatter.productImage.childImageSharp.fixed}
               key={edge.node.id}
             />
+            <p className="productImageCaption">
+              {edge.node.frontmatter.title}
+            </p>
           </li>
         )
       })}

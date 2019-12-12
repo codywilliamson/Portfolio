@@ -16,6 +16,13 @@
     transition: all .3s ease-in;
 }
 
+.pageTitle {
+    color: $white;
+    font-size: 5em;
+    font-weight: bold;
+    text-align: center;
+}
+
 @media (max-width: 1155px) {
     .mainTitle {
         font-size: 13em;

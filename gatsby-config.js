@@ -13,20 +13,21 @@ module.exports = {
     // for optimizing & transforming images using graphql
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
+    'gatsby-transformer-remark',
     // for sourcing data from local filesystem
     // check https://www.gatsbyjs.org/packages/gatsby-source-filesystem/?=gatsby%20source
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'src',
-        path: `${__dirname}/src/`
+        path: `${__dirname}/src`
       }
     },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'products',
-        path: `${__dirname}/src/products/`
+        path: `${__dirname}/src/products`
       }
     },
     {

@@ -3,10 +3,9 @@ import Layout from '../components/Layout'
 import PageHeader from '../components/PageHeader'
 import TextSection from '../components/TextSection'
 import ProductGallery from '../components/ProductGallery'
-import LatestNews from '../components/LatestNews'
 import productsHeader from '../assets/headers/productsHeader.png'
-import whiteWiggleHR from '../assets/wiggleHR.svg'
-import orangeWiggleHR from '../assets/orangeWiggleHR.svg'
+import productsMidPage from '../assets/headers/productsMidPageHeader.png'
+import orangeWiggleHR from '../assets/orangeWiggleHR.svg' 
 
 const ProductsPage = () => {
     return (
@@ -20,18 +19,20 @@ const ProductsPage = () => {
 
             <ProductGallery 
                 title="Leggings"
-                hrClass="basicHR"
+                colorWiggleHR={orangeWiggleHR}
+                whichProduct="Leggings"
                 showHR="none"/>
 
             <ProductGallery 
-                title="Leggings"
+                title="Extras"
                 hrClass="basicHR"
-                showHR="none"/>
+                whichProduct="Extras"
+                showHR="block"/>
 
             <PageHeader 
-                title="products" 
+                title="designed to work. better" 
                 headerStyle="pageTitle" 
-                bgImage={productsHeader}
+                bgImage={productsMidPage}
             />
 
             <TextSection 
