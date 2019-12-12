@@ -6,6 +6,7 @@ import ProductGallery from '../components/ProductGallery'
 import productsHeader from '../assets/headers/productsHeader.png'
 import productsMidPage from '../assets/headers/productsMidPageHeader.png'
 import orangeWiggleHR from '../assets/orangeWiggleHR.svg' 
+import FAQs from '../components/FAQs'
 
 const ProductsPage = () => {
     return (
@@ -44,6 +45,8 @@ const ProductsPage = () => {
                 bgClass="whiteBg"
                 display="none"
                 />
+
+            <FAQs />
 
         </Layout>
     )

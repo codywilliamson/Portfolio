@@ -7,6 +7,7 @@ import ExtrasProducts from './productGalleryQueries/ExtrasProducts'
 const ProductGallery = (props) => {
     let productToShow;
 
+    // check to see which component to show based on what props.whichProduct is
     if (props.whichProduct === 'Leggings') {
         productToShow = <LeggingsProducts />
     } else if (props.whichProduct === 'Extras') {
@@ -20,7 +21,7 @@ const ProductGallery = (props) => {
             <h3 className="textSectionTitle minionPro">
                 {props.title}
             </h3>
-
+            
             <hr className="basicHR" style={{display: props.showHR}} />
 
             <img src={props.colorWiggleHR} alt="" className="wiggleHR" style={{display: props.showWiggleHR}}/>

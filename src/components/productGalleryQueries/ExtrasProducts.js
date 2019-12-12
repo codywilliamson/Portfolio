@@ -3,9 +3,13 @@ import { Link, useStaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 
 const ExtrasProducts = () => {
-  // use graphql to retrieve all images in src/products
-  // use gatsby-transformer-sharp to dynamically resize images
-  // specify products/ dir to only retrieve images from there
+  // graphql query for products with category "Extras"
+  // graphql query doesn't support variables in useStaticQuery
+  // this is why each possible return is its own component
+  // pageQuery support variables, however React Components can't
+  // receive arrays as props (to show a list of products in this case)
+  // im sure there is a better way, but this is my first run with React
+  // and i've only got a month to push this site out so will revisit.
   const images = useStaticQuery(graphql`
     query {
         allMarkdownRemark(filter: {frontmatter: {category: {eq:"Extras"} }}) {
