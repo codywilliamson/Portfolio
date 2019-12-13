@@ -12,6 +12,15 @@
     color: $white
 }
 
+.whiteHexBg {
+    background: $white;
+    background-image: url("../assets/whiteHexBg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: $orange;
+}
+
 .textSectionContainer {
     display: flex;
     flex-direction: column;
