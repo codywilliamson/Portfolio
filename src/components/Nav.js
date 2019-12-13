@@ -1,6 +1,7 @@
 import React from 'react'
 // enable gatsby linking -- SPA performance
 import { Link } from 'gatsby'
+import yooneekOrange from '../assets/logos/yooneekOrange.svg'
 
 const Nav = () => {
     
@@ -20,12 +21,10 @@ const Nav = () => {
         
         <header className="navigation">
             <nav id="navContainer" className="navContainer">
-
+                
                 <div className="logoContainer">
                     <Link to="/">
-                        <h1 className="navLogo fadeIn">
-                            yooneek<sub className="logoTM">tm</sub>
-                        </h1>
+                        <img src={yooneekOrange} alt="Yooneek Logo" className="navLogo fadeIn"/>
                     </Link>
                 </div>
 

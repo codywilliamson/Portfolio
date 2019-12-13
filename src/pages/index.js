@@ -13,8 +13,9 @@ const Home = () => {
         <Layout>
 
             <PageHeader 
-                title="yooneek" 
-                headerStyle="mainTitle" 
+                showTitle="none"
+                showLogo="block"
+                headerStyle="mainTitle"
                 bgImage={homeHeader}
                 true
             />

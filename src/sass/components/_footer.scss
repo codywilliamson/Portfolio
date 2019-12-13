@@ -8,21 +8,16 @@
     justify-content: space-evenly;
     padding: 3rem 0;
 
-    .navLogo {
-        font-size: 4em;
-        margin: 1rem 0 2rem 0;
-
-        .logoTM {
-            font-size: .3em;
-        }
-    }
-
     * {
         margin: 1.3rem 0;
         font-family: $font;
         font-weight: bold;
         font-size: .95em;
     }
+}
+
+.footerLogo {
+    width: 15rem;
 }
 
 .footerNavItem + .footerNavItem:before {

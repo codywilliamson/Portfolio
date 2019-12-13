@@ -1,16 +1,15 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import fbIcon from '../assets/fbIcon.svg'
-import igIcon from '../assets/igIcon.svg'
-import twitterIcon from '../assets/twitterIcon.svg'
+import fbIcon from '../assets/logos/fbIcon.svg'
+import igIcon from '../assets/logos/igIcon.svg'
+import twitterIcon from '../assets/logos/twitterIcon.svg'
+import yooneekWhite from '../assets/logos/yooneekWhite.svg'
 
 const Footer = () => {
     return (
         <footer className="siteFooterContainer">
             <div className="footerNavContainer"> 
-                <h1 className="navLogo fadeIn">
-                    yooneek<sub className="logoTM">tm</sub>
-                </h1>
+                <img className="footerLogo fadeIn" src={yooneekWhite} alt="Yooneek Logo" />
 
                 <ul className="footerNavMenu">
                     <Link to="/products" className="footerNavItem">Products</Link>
