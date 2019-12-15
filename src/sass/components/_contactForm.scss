@@ -1,0 +1,19 @@
+.contactFormContainer {
+    padding: 4rem 0;
+}
+
+.contactFormInside {
+    flex-direction: column;
+    .textSectionTitle {
+        align-self: flex-start;
+    }
+}
+
+.contactForm {
+    flex-direction: column;
+}
+
+.contactInput {
+    border: 1px solid $orange;
+    
+}

@@ -3,7 +3,6 @@ import React from 'react'
 import topLeftBQ from '../assets/topLeftBQ.png'
 import bottomRightBQ from '../assets/bottomRightBQ.png'
 
-
 const TextSection = (props) => {
     
 
@@ -18,7 +17,9 @@ const TextSection = (props) => {
 
             <hr className="basicHR" style={{display: props.showHR}} />
 
-            <img src={props.colorWiggleHR} alt="" className="wiggleHR" style={{display: props.showWiggleHR}}/>
+            <img src={props.colorWiggleHR} alt="" className="wiggleHR" style={{display: props.showWiggleHR || "none"}}/>
+
+            <img src={props.textSectionImg} alt="" className="textSectionImg" style={{display: props.showImg || "none"}}/>
 
             <p className="textSectionMsg fadeIn"> 
                 {props.message}
