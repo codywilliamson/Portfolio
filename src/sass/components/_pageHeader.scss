@@ -17,12 +17,6 @@
     }
 }
 
-@keyframes animateOutline {
-    to {
-        stroke-dashoffset: 0;
-    }
-}
-
 .pageTitle {
     color: $white;
     font-size: 5em;
@@ -30,37 +24,22 @@
     text-align: center;
 }
 
-@media (max-width: 1155px) {
-    .mainTitle {
-        font-size: 13em;
-    }
-}
 
-@media (max-width: 850px) {
-    .mainTitle {
-        font-size: 10em;
+
+@keyframes animateOutline {
+    to {
+        stroke-dashoffset: 0;
     }
 }
 
 @media (max-width: 660px) {
-    .mainTitle {
-        font-size: 8em;
-    }
-
     .pageHeaderContainer {
-        height: 20rem;
+        height: 25rem;
     }
 }
 
-@media (max-width: 525px) {
-    .mainTitle {
-        -webkit-text-stroke-width: 1px;
-        font-size: 6em;
-    }
-}
-
-@media (max-width: 400px) {
-    .mainTitle {
-        font-size: 4em;
+@media (max-width: 380px) {
+    #aboutSecondHeader {
+        height: 28rem;
     }
 }

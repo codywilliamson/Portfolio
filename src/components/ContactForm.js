@@ -27,7 +27,9 @@ const ContactForm = (props) => {
                 <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="phone number" className="contactInput" />
 
                 <label htmlFor="feedback" className="sr-only">What Would You Like To Say?</label>
-                <input type="textarea" name="feedback" id="feedback" placeholder="What would you like to say?" className="contactInput contactFeedback" />
+                <textarea type="textarea" name="feedback" id="feedback" placeholder="What would you like to say?" className="contactInput contactFeedback" rows="5"/>
+
+                <input type="submit" className="submit" value="SEND" />
 
 
             </form>

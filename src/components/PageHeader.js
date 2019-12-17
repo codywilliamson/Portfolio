@@ -4,7 +4,7 @@ const PageHeader = (props) => {
 
     return (
 
-        <section className="pageHeaderContainer flexHardCenter" style={{backgroundImage: "url(" + props.bgImage + ")"}}>
+        <section id={props.id} className="pageHeaderContainer flexHardCenter" style={{backgroundImage: "url(" + props.bgImage + ")"}}>
             
             <h1 className={`fadeIn ${props.headerStyle}`} style={{display: props.showTitle || "block"}}>
                 {props.title || " "}

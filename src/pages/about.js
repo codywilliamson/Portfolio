@@ -30,6 +30,7 @@ const About = () => {
             />
 
             <PageHeader 
+                id="aboutSecondHeader"
                 title="warmth without the weight"
                 headerStyle="pageTitle"
                 bgImage={aboutSecondHeader}

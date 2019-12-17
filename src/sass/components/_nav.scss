@@ -41,6 +41,10 @@
   font-family: $font;
 }
 
+.activeItem {
+  border-bottom: 1px solid $orange;
+}
+
 .navHamburger {
     cursor: pointer;
     display: none;
@@ -186,7 +190,7 @@
   .menuContainer {
     position: absolute;
     transform: translateX(-5000px);
-    transition: all .75s ease-in-out;
+    transition: all .3s ease-in-out;
     flex-basis: 100%;
     display: flex;
     top: 0;
@@ -216,10 +220,9 @@
     justify-content: flex-end;
   }
 
-  .navLogo.menuActive {
-    transition: all 1s ease-in-out;
-    z-index: 5000;
-    color: $white;
+  .navLogo.menuActive path {
+    transition: all .4s ease;
+    fill: $white;
   }
 
   .navHamburger {
