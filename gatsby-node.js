@@ -14,8 +14,30 @@ module.exports.onCreateNode = ({ node, actions }) => {
     }
 }
 
-// module.exports.createPages = ({ graphql, actions }) => {
-//     const { createPage } = actions
-//     const productTemplate = path.resolve('./src/templates/productPage.js')
-    
-// }
+module.exports.createPages = async ({ graphql, actions }) => {
+    const { createPage } = actions
+    const productTemplate = path.resolve('./src/templates/product.js')
+    const res = await graphql(`
+        query {
+            allMarkdownRemark {
+              edges {
+                node {
+                  fields {
+                    slug
+                  }
+                }
+              }
+            }
+          }
+    `)
+
+    res.data.allMarkdownRemark.edges.forEach((edge) => {
+        createPage({
+            component: productTemplate,
+            path: `/product/${edge.node.fields.slug}`,
+            context: {
+                slug: edge.node.fields.slug
+            }
+        })
+    })
+}

@@ -1,0 +1,74 @@
+.singleProductPageContent {
+    flex-direction: column;
+    margin-top: 5rem;
+}
+
+.backToLink {
+    color: $orange;
+    padding: 1.5rem;
+    font-size: 1.05em;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: $font;
+    align-self: flex-start;
+}
+
+.singleProductItemContainer {
+    padding: 2.5rem 1.5rem;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.singleProductImgContainer,
+.singleProductInfoContainer {
+    flex-basis: 50%;
+}
+
+.singleProductInfoContainer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 550px;
+    color: $orange;
+
+    .singleProductName {
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 2px;
+        font-size: 2em;
+    }
+
+    .paragraphContainer {
+        margin: 2.3rem 0;
+    }
+
+    .productInfoHeading {
+        font-weight: bold;
+        font-size: .95em;
+        letter-spacing: 1px;
+    }
+
+    .productDescription {
+        width: 50%;
+        letter-spacing: 1px;
+        font-size: .9em;
+    }
+}
+
+.buyNow {
+    width: auto;
+    padding: .5rem 2rem;
+}
+
+.productReviewsContainer {
+    width: 80%;
+    margin: 3rem 0;
+    color: $orange;
+}
+
+.fullWidthHR {
+    width: 100%;
+}

@@ -23,6 +23,9 @@ const LeggingsProducts = () => {
                   }
                 }
               }
+              fields {
+                slug
+              }
             }
           }
         }
@@ -37,14 +40,16 @@ const LeggingsProducts = () => {
         return (
           // important to give both the li AND the <Img> component a unique key
           <li key={edge.node.id} className="productImageItem">
-            <Img
-              className="productImage"
-              fixed={edge.node.frontmatter.productImage.childImageSharp.fixed}
-              key={edge.node.id}
-            />
-            <p className="productImageCaption">
-              {edge.node.frontmatter.title}
-            </p>
+            <Link to={`/product/${edge.node.fields.slug}`} >
+              <Img
+                className="productImage"
+                fixed={edge.node.frontmatter.productImage.childImageSharp.fixed}
+                key={edge.node.id}
+              />
+              <p className="productImageCaption">
+                {edge.node.frontmatter.title}
+              </p>
+            </Link>
           </li>
         )
       })}
