@@ -1,12 +1,9 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.org">
-    <img alt="Yooneek" src="src/assets/logos/yooneekOrange.svg" width="120" />
+    <img alt="Yooneek" src="src/assets/logos/yooneekOrange.svg" width="160" />
   </a>
 </p>
-<h1 align="center">
-  Yooneek
-</h1>
 
 ## 🧐 What's inside?
 
