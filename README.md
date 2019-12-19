@@ -1,6 +1,6 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
-  <a href="https://www.gatsbyjs.org">
+  <a href="https://yooneek.0kra.com/">
     <img alt="Yooneek" src="src/assets/logos/yooneekOrange.svg" width="160" />
   </a>
 </p>
