@@ -14,8 +14,8 @@ export const query = graphql`
                 amazonLink
                 productImage {
                     childImageSharp {
-                      fixed(width: 425, height: 550) {
-                        ...GatsbyImageSharpFixed
+                      fluid(maxWidth: 425, maxHeight: 550, fit: FILL) {
+                        ...GatsbyImageSharpFluid
                       }
                     }
                   }
@@ -41,7 +41,7 @@ const ProductPage = (props) => {
                 <div className="singleProductImgContainer flexHardCenter">
                 <Img
                     className="singleProductImage"
-                    fixed={props.data.markdownRemark.frontmatter.productImage.childImageSharp.fixed}
+                    fluid={props.data.markdownRemark.frontmatter.productImage.childImageSharp.fluid}
                     key={props.data.markdownRemark.id}
                 />
                 </div>

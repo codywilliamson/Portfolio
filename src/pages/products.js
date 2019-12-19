@@ -36,17 +36,18 @@ const ProductsPage = () => {
                 bgImage={productsMidPage}
             />
 
-            <TextSection 
+           <div className="whiteHexBg">
+           <TextSection 
                 title="Product Care" 
                 showHR="none"
                 colorWiggleHR={orangeWiggleHR}
                 showWiggleHR="block"
                 message="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel rerum expedita aut. Voluptatem, nesciunt? Illo fugit pariatur commodi? Sapiente, quasi. Illo fugit pariatur commodi? Sapiente, quasi. Illo fugit pariatur commodi? Sapiente, quasi. Illo fugit pariatur commodi? Sapiente, quasi."
-                bgClass="whiteBg"
                 display="none"
                 />
 
             <FAQs />
+           </div>
 
         </Layout>
     )

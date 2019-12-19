@@ -3,7 +3,7 @@ import React from 'react'
 const FAQs = (props) => {
 
     return (
-        <section className="textSectionContainer whiteHexBg">
+        <section className="textSectionContainer">
             <h3 className="textSectionTitle fadeIn minionPro">
                 {props.title || "FAQs"}
             </h3>

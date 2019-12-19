@@ -37,19 +37,21 @@ const About = () => {
             />
         
 
+            <div className="whiteHexBg">
+
             <TextSection 
                 title="Philosophy"
                 showHR="block"
                 message="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore, odio a earum cum recusandae ipsam non, perferendis aliquid dolores iure dignissimos omnis expedita optio libero excepturi architecto tempora quod cumque magnam exercitationem et autem. Obcaecati impedit nemo necessitatibus, debitis hic fugiat recusandae magnam. Laboriosam enim, quia aliquid dolores obcaecati natus maiores, deserunt consequatur illo provident aliquam aperiam. Nisi labore excepturi accusamus esse. Rerum soluta quis porro asperiores delectus sit incidunt."
-                bgClass="whiteHexBg"
             />
 
             <TextSection 
                 title="Company Info"
                 showHR="block"
                 message="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore, odio a earum cum recusandae ipsam non, perferendis aliquid dolores iure dignissimos omnis expedita optio libero excepturi architecto tempora quod cumque magnam exercitationem et autem. Obcaecati impedit nemo necessitatibus, debitis hic fugiat recusandae magnam. Laboriosam enim, quia aliquid dolores obcaecati natus maiores, deserunt consequatur illo provident uta quis porro asperiores delectus sit incidunt."
-                bgClass="whiteHexBg"
             />
+
+            </div>
 
         </Layout>
 
