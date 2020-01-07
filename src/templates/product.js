@@ -92,7 +92,7 @@ const ProductPage = (props) => {
 
                 
             </div>
-
+            
             </div>
             
         </Layout>

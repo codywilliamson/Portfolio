@@ -56,4 +56,10 @@ is your development server.
 ```
 is your graphiql playground.
 
+## Issues?
+
+Some common, but not so common issues you might run across:
+
+  * if it has been awhile since you've ran the project, you might have to run ```npm install``` to get going. Sometimes this will throw an ```ELIFECYCLE``` error and running ```gatsby clean``` might say command not found. If this happens, your npm error message should tell you which plugin broke. For me, it was the sharp/ plugin. Remove this from your node_modules/ folder and reinstall. Then reinstall gatsby-cli. Voila, this should work!
+
 <!-- AUTO-GENERATED-CONTENT:END -->

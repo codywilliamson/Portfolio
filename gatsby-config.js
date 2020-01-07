@@ -23,6 +23,7 @@ module.exports = {
         path: `${__dirname}/src`
       }
     },
+    // source products directory
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -30,6 +31,15 @@ module.exports = {
         path: `${__dirname}/src/products`
       }
     },
+    // source blogs directory
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'blogs',
+        path: `${__dirname}/src/blogs`
+      }
+    },
+    // load self hosted fonts
     {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
@@ -42,6 +52,7 @@ module.exports = {
       }
     }
   ],
+  // site details
   siteMetadata: {
     title: 'Yooneek',
     author: 'Mindvolt'

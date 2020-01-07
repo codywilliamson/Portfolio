@@ -3,9 +3,6 @@ import { Link, useStaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 
 const HomeProducts = () => {
-  // use graphql to retrieve all images in src/products
-  // use gatsby-transformer-sharp to dynamically resize images
-  // specify products/ dir to only retrieve images from there
   const images = useStaticQuery(graphql`
     query {
         allMarkdownRemark {
