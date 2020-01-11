@@ -46,6 +46,18 @@ body, html {
     justify-content: center;
 }
 
+.flex {
+    display: flex;
+}
+
+.flexColumn {
+    flex-direction: column;
+}
+
+.flexRow {
+    flex-direction: row;
+}
+
 .minionPro {
     font-family: $text-section-font;
 }

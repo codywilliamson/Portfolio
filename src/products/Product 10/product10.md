@@ -10,6 +10,7 @@ benefits: 'This is sample content. This is sample content. This is sample conten
 This is sample content.
 This is sample content.'
 amazonLink: https://amazon.com
+blog: false
 ---
 
 This is sample content. This is sample content. This is sample content. This is sample content. This is sample content. This is sample content.

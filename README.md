@@ -1,11 +1,11 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
+<!-- BEGIN README -->
 <p align="center">
   <a href="https://yooneek.0kra.com/">
     <img alt="Yooneek" src="src/assets/logos/yooneekOrange.svg" width="160" />
   </a>
 </p>
 
-## 🧐 What's inside?
+## What's inside?
 
 A quick look at the top-level files and directories you'll see in this project.
 
@@ -33,6 +33,7 @@ A quick look at the top-level files and directories you'll see in this project.
 1. [onClick types of functions: note: inline](https://upmostly.com/tutorials/react-onclick-event-handling-with-examples#call-inline-function-onclick-event-handler)
 1. [Styling Svg Strokes](https://css-tricks.com/svg-line-animation-works/)
 1. [SVG optimizer -- Useful for manipulating large svgs](http://petercollingridge.appspot.com/svg-editor)
+1. [dangerouslySetInnerHtml follows the syntax {{ __html: html }}](https://github.com/gatsbyjs/gatsby/issues/10510)
 
 ## Get Started
 
@@ -40,6 +41,7 @@ Clone the repo, install dependencies, start dev server
 
 ```shell
     git clone https://github.com/mindvolt/yooneek.git
+    cd yooneek
     npm install
     npm run develop
 ```
@@ -60,6 +62,8 @@ is your graphiql playground.
 
 Some common, but not so common issues you might run across:
 
-  * if it has been awhile since you've ran the project, you might have to run ```npm install``` to get going. Sometimes this will throw an ```ELIFECYCLE``` error and running ```gatsby clean``` might say command not found. If this happens, your npm error message should tell you which plugin broke. For me, it was the sharp/ plugin. Remove this from your node_modules/ folder and reinstall. Then reinstall gatsby-cli. Voila, this should work!
-
-<!-- AUTO-GENERATED-CONTENT:END -->
+  * if it has been awhile since you've ran the project, you might have to run ```npm install``` to get going. Sometimes this will throw an ```ELIFECYCLE``` error and running ```gatsby clean``` might say command not found. 
+  
+  If this happens, your npm error message should tell you which plugin broke. For me, it was the sharp/ plugin. Remove this from your node_modules/ folder and reinstall. Then reinstall gatsby-cli. Voila, this should work!
+    * If this didn't work, delete the repo and reclone.
+ s
