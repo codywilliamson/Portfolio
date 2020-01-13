@@ -2,7 +2,6 @@
 blog: true
 title: Latest News One
 date: 01/05/2020
-blogFeaturedImageHomepage: https://via.placeholder.com/610x222
 blogPostFeaturedImage: postOneImage.jpeg
 excerpt: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni suscipit corporis tenetur est ipsum animi architecto pariatur autem ullam dolor. Quod reiciendis molestiae excepturi, tempora dolor, ducimus eveniet numquam dolores, at accusamus ullam 
 ---

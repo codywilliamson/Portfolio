@@ -21,6 +21,11 @@
     padding: 2rem 0;
     margin: 2rem 0;
     width: 90%;
+
+    .latestNewsImg {
+        width: 610px;
+        height: 222px;
+    }
 }
 
 .latestNewsImgContainer, .latestNewsTextContainer {
@@ -50,6 +55,10 @@
     letter-spacing: 1px;
     font-size: .95em;
     line-height: 2;
+}
+
+.latestNewsBlogDate {
+    font-weight: normal;
 }
 
 @media (min-width: 2560px) {

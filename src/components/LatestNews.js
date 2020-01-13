@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link, useStaticQuery, graphql } from 'gatsby'
+import Img from 'gatsby-image'
 
 const LatestNews = () => {
   const blogPosts = useStaticQuery(graphql`
@@ -13,7 +14,13 @@ const LatestNews = () => {
           frontmatter {
             title
             date
-            blogFeaturedImageHomepage
+            blogPostFeaturedImage {
+              childImageSharp {
+                fluid {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
             excerpt
           }
         }
@@ -33,7 +40,13 @@ const LatestNews = () => {
           <div className="latestNewsImgTextContainer minionPro">
               <div className="latestNewsImgContainer fadeIn">
                   <Link to={`/blog/${blogPosts.allMarkdownRemark.edges[0].node.fields.slug}`}>
-                      <img src={blogPosts.allMarkdownRemark.edges[0].node.frontmatter.blogFeaturedImageHomepage} alt="" className="latestNewsImg"/>
+                  <Img
+              className="latestNewsImg"
+              fluid={
+                blogPosts.allMarkdownRemark.edges[0].node.frontmatter.blogPostFeaturedImage
+                  .childImageSharp.fluid
+              }
+            />
                   </Link>
               </div>
 
@@ -41,6 +54,10 @@ const LatestNews = () => {
                   <Link to={`/blog/${blogPosts.allMarkdownRemark.edges[0].node.fields.slug}`}>
                       <h3 className="latestNewsTitle fadeIn">
                           {blogPosts.allMarkdownRemark.edges[0].node.frontmatter.title}
+                          <br/>
+                          <span className="latestNewsBlogDate">
+                            {blogPosts.allMarkdownRemark.edges[0].node.frontmatter.date}
+                          </span>
                       </h3>
                   </Link>
 
