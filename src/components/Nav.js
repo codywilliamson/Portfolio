@@ -18,6 +18,21 @@ const Nav = () => {
         logo.classList.toggle('menuActive');
     }
 
+    // on desktop, adds scrolled class to nav
+// var myNav = document.querySelector("nav");
+// var nav = document.querySelector(".nav__list");
+
+// window.onscroll = function() {
+//   "use strict";
+//   if (document.body.scrollTop >= 100 || document.documentElement.scrollTop >= 100) {
+//     nav.classList.add("scrolled");
+//     myNav.classList.add("scrolled");
+//   } else {
+//     nav.classList.remove("scrolled");
+//     myNav.classList.remove("scrolled");
+//   }
+// };
+
     return (
         
         <header className="navigation">

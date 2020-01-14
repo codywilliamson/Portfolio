@@ -18,9 +18,10 @@ const Infrared = () => {
                 bgImage={infraredHeader}
             />
 
-            {/* to be replaced with video... */}
             <section className="videoSection">
-                <img src={infraredVideo} alt="" className="videoThumbnail"/>
+                <a href="#" target="_blank" className="youTubeVideoLink">
+                    <img src={infraredVideo} alt="" className="videoThumbnail"/>
+                </a>
             </section>
 
             <TextSection 
