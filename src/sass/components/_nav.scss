@@ -13,7 +13,17 @@
   justify-content: space-between;
   padding: 0.5rem 3rem;
   color: $orange;
+  transition: all ease-in-out .3s;
+}
+
+.bodyScrolled {
   box-shadow: 0px 2px 6px 1px rgba(0,0,0,0.45);
+  padding: .3rem 3rem;
+}
+
+// if mobile menu is open, disable scroll on body
+.bodyNoScroll {
+  overflow: hidden;
 }
 
 .logoContainer {
