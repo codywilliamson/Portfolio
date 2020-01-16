@@ -6,6 +6,7 @@ import twitterIcon from '../assets/logos/twitterIcon.svg'
 import yooneekWhite from '../assets/logos/yooneekWhite.svg'
 
 const Footer = () => {
+
     return (
         <footer className="siteFooterContainer">
             <div className="footerNavContainer"> 
@@ -16,6 +17,7 @@ const Footer = () => {
                     <Link to="/infrared" className="footerNavItem">Far Infrared</Link>
                     <Link to="/about" className="footerNavItem">About</Link>
                     <Link to="/contact" className="footerNavItem">Contact Us</Link>
+                    <Link to="/blogs" className="footerNavItem">Blog</Link>
                 </ul>
 
                 <p className="footerAddress">
@@ -48,7 +50,7 @@ const Footer = () => {
                     <button className="emailSignupButton" type="button">Sign Up</button>
                 </div>
 
-                <a href="" className="footerPrivacyLink">
+                <a href="#" className="footerPrivacyLink">
                     Privacy Policy &amp; Cookies Page
                 </a>
 

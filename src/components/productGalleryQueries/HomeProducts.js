@@ -5,7 +5,7 @@ import Img from 'gatsby-image'
 const HomeProducts = () => {
   const images = useStaticQuery(graphql`
     query {
-        allMarkdownRemark {
+        allMarkdownRemark(filter: {frontmatter: {blog: {eq: false}}}) {
           edges {
             node {
               id

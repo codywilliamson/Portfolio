@@ -1,8 +1,5 @@
 import React from 'react'
-// enable gatsby linking -- SPA performance
 import { Link } from 'gatsby'
-import yooneekOrange from '../assets/logos/yooneekOrange.svg'
-import yooneekWhite from '../assets/logos/yooneekWhite.svg'
 
 const Nav = () => {
     
