@@ -1,4 +1,5 @@
 import React from 'react'
+import AwesomeSlider from 'react-awesome-slider'
 
 const PageHeader = (props) => {
 

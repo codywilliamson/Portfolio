@@ -2,6 +2,22 @@ import React from 'react'
 import { Link } from 'gatsby'
 
 const Nav = () => {
+    if (typeof window !== `undefined`) {
+        // add box shadow and shorten nav on scroll
+        window.onscroll = function() {
+            // target nav
+            let nav = document.querySelector(".navContainer");
+
+            // if body scrolls more than 100 px, add class
+            if (document.body.scrollTop >= 100 || document.documentElement.scrollTop >= 100) {
+                nav.classList.add("bodyScrolled");
+            } else {
+                // remove if user scrolls back to the top of document
+                nav.classList.remove("bodyScrolled");
+            }
+        };
+    }
+
     // mobile nav function
     function openMobileNav() {
         // target elements
@@ -25,19 +41,6 @@ const Nav = () => {
         }
     }
 
-    // add box shadow and shorten nav on scroll
-    window.onscroll = function() {
-        // target nav
-        let nav = document.querySelector(".navContainer");
-
-        // if body scrolls more than 100 px, add class
-        if (document.body.scrollTop >= 100 || document.documentElement.scrollTop >= 100) {
-            nav.classList.add("bodyScrolled");
-        } else {
-            // remove if user scrolls back to the top of document
-            nav.classList.remove("bodyScrolled");
-        }
-    };
 
     return (
         

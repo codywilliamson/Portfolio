@@ -1,6 +1,7 @@
 import React from "react"
 import Layout from '../components/Layout'
 import PageHeader from '../components/PageHeader'
+import HomeHeader from '../components/HomeHeader/HomeHeader'
 import TextSection from '../components/TextSection'
 import ProductGallery from '../components/ProductGallery'
 import LatestNews from '../components/LatestNews'
@@ -12,19 +13,29 @@ const Home = () => {
     return (
         <Layout>
 
-            <PageHeader 
+            {/* <PageHeader 
                 showTitle="none"
                 showLogo="block"
                 headerStyle="mainTitle"
                 bgImage={homeHeader}
                 true
-            />
+            /> */}
+            <HomeHeader />
 
             <TextSection 
                 title="The Yooneek Experience" 
                 showHR="block"
                 showWiggleHR="none"
-                message="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel rerum expedita aut. Voluptatem, nesciunt? Illo fugit pariatur commodi? Sapiente, quasi. Illo fugit pariatur commodi? Sapiente, quasi. Illo fugit pariatur commodi? Sapiente, quasi. Illo fugit pariatur commodi? Sapiente, quasi."
+                message={
+                    /* to pass HTML as prop, use JSX */
+                    <span>
+                        Why "<b>Yooneek</b>"? It must be said that there's unique stuff all 
+                        over the market place. From the traditional retailers to the startups, 
+                        everyone has an angle on "<b>Yooneek</b>". But are you really looking 
+                        for someone else's take on unique? Unique doesn't just have to refer to 
+                        style, or price, or modern or antique &mdash; Yooneek just means "<b>made for you</b>".
+                    </span>
+                }
                 bgClass="whiteBg"
                 display="none"
                 />

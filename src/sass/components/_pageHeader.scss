@@ -4,10 +4,27 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    width: 100vw;
 }
 
+.slider {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-flow: row;
+  }
+  
+.sliderWrapper {
+    display: flex;
+    align-items: center;
+    flex-flow: row;
+}
+  
 .yooneekOutline {
     width: 100rem;
+
+    margin: 0 auto;
+
 
     // animate logo
     path {
@@ -43,3 +60,4 @@
         height: 28rem;
     }
 }
+
