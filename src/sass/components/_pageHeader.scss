@@ -7,35 +7,35 @@
     width: 100vw;
 }
 
-.slider {
-    position: relative;
-    display: flex;
-    align-items: center;
-    flex-flow: row;
-  }
-  
-.sliderWrapper {
-    display: flex;
-    align-items: center;
-    flex-flow: row;
+.homeSlideContainer {
+    padding-bottom: 3rem;
     position: relative;
 }
 
-.headerLogoContainer { 
+.yooneekOutlineContainer { 
     position: absolute;
     left: -50%;
     right: -50%;
+    top: 30%;
 }
   
 .yooneekOutline {
-    width: 100rem;
-    margin: 0 auto; 
+    margin: 0 auto;
+    width: 30rem;
 
     // animate logo
     path {
         stroke-dasharray: 1000;
         stroke-dashoffset: 1000;
         animation: animateOutline 3s linear forwards;
+    }
+
+    @media (max-width: 500px) {
+        width: 23rem;
+    }
+
+    @media (max-width: 500px) {
+        width: 20rem;
     }
 }
 
@@ -66,18 +66,24 @@
     }
 }
 
-.dotsContainer {
-    align-items: center;
-    justify-content: center;
+.slick-dots {
+    padding: 3rem !important;
+}
+
+.circle {
+    border-radius: 100%;
+    padding: 1rem;
+    border: 2px solid $orange;
+}
+
+.slick-active {
 
     .circle {
-        border-radius: 100%;
-        padding: 1rem;
-        border: 2px solid $orange;
-        margin: 2rem 1.5rem;
-
-        &.orangeFill {
-            background: $orange;
-        }
+        background: $orange;
     }
+    
+}
+
+.slick-dots li {
+    margin: -5rem 2rem -3.5rem 2rem !important;
 }

@@ -32,9 +32,12 @@ A quick look at the top-level files and directories you'll see in this project.
 1. [onClick functions](https://reactjs.org/docs/handling-events.html)
 1. [onClick types of functions: note: inline](https://upmostly.com/tutorials/react-onclick-event-handling-with-examples#call-inline-function-onclick-event-handler)
 1. [Styling Svg Strokes](https://css-tricks.com/svg-line-animation-works/)
-1. [SVG optimizer -- Useful for manipulating large svgs](http://petercollingridge.appspot.com/svg-editor)
+1. [SVGOMG -- Useful for manipulating large svgs](https://jakearchibald.github.io/svgomg/)
 1. [dangerouslySetInnerHtml follows the syntax {{ __html: html }}](https://github.com/gatsbyjs/gatsby/issues/10510)
 1. [building react image slider basis](https://medium.com/@ItsMeDannyZ/build-an-image-slider-with-react-es6-264368de68e4)
+1. [React Slick-Slider Port Carousel](https://react-slick.neostack.com/docs/get-started)
+    1a. [Slick-Slider Custom Dots](https://gist.github.com/im-sad/aba39230a2992147151a06a915fc0800)
+    1a. [Slick-Track large width fix](https://stackoverflow.com/questions/45735511/slick-slider-gets-wrong-width)
 
 ## Get Started
 

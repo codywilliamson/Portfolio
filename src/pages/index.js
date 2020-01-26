@@ -15,14 +15,6 @@ const Home = () => {
 
             <HomeHeader />
 
-            <div className="dotsContainer flex flexRow">
-                <div className="circle orangeFill"></div>
-                <div className="circle"></div>
-                <div className="circle"></div>
-                <div className="circle"></div>
-                <div className="circle"></div>
-            </div>
-
             <TextSection 
                 title="The Yooneek Experience" 
                 showHR="block"
