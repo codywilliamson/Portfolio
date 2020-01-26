@@ -18,13 +18,18 @@
     display: flex;
     align-items: center;
     flex-flow: row;
+    position: relative;
+}
+
+.headerLogoContainer { 
+    position: absolute;
+    left: -50%;
+    right: -50%;
 }
   
 .yooneekOutline {
     width: 100rem;
-
-    margin: 0 auto;
-
+    margin: 0 auto; 
 
     // animate logo
     path {
@@ -61,3 +66,18 @@
     }
 }
 
+.dotsContainer {
+    align-items: center;
+    justify-content: center;
+
+    .circle {
+        border-radius: 100%;
+        padding: 1rem;
+        border: 2px solid $orange;
+        margin: 2rem 1.5rem;
+
+        &.orangeFill {
+            background: $orange;
+        }
+    }
+}

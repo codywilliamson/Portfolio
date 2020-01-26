@@ -13,14 +13,15 @@ const Home = () => {
     return (
         <Layout>
 
-            {/* <PageHeader 
-                showTitle="none"
-                showLogo="block"
-                headerStyle="mainTitle"
-                bgImage={homeHeader}
-                true
-            /> */}
             <HomeHeader />
+
+            <div className="dotsContainer flex flexRow">
+                <div className="circle orangeFill"></div>
+                <div className="circle"></div>
+                <div className="circle"></div>
+                <div className="circle"></div>
+                <div className="circle"></div>
+            </div>
 
             <TextSection 
                 title="The Yooneek Experience" 

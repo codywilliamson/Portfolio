@@ -34,6 +34,7 @@ A quick look at the top-level files and directories you'll see in this project.
 1. [Styling Svg Strokes](https://css-tricks.com/svg-line-animation-works/)
 1. [SVG optimizer -- Useful for manipulating large svgs](http://petercollingridge.appspot.com/svg-editor)
 1. [dangerouslySetInnerHtml follows the syntax {{ __html: html }}](https://github.com/gatsbyjs/gatsby/issues/10510)
+1. [building react image slider basis](https://medium.com/@ItsMeDannyZ/build-an-image-slider-with-react-es6-264368de68e4)
 
 ## Get Started
 
