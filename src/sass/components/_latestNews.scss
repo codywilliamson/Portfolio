@@ -21,6 +21,10 @@
     padding: 2rem 0;
     margin: 2rem 0;
     width: 90%;  
+
+    @media (max-width: 350px) {
+        width: 100%;
+    }
 }
 
 .latestNewsImg {
@@ -39,10 +43,14 @@
 .latestNewsImgContainer, .latestNewsTextContainer {
     flex-basis: 45%;
     margin: 0 1.5rem;
+
+    @media (max-width: 350px) {
+        margin: 0;
+    }
 }
 
 .latestNewsTextContainer {
-    color: $orange;
+    color: $dark-grey;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

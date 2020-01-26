@@ -1,6 +1,6 @@
 .whiteBg {
     background: $white;
-    color: $orange;
+    color: $dark-grey;
 }
 
 .orangeBg {
@@ -9,7 +9,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    color: $white
+    color: $dark-grey;
 }
 
 .whiteHexBg {
@@ -18,7 +18,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    color: $orange;
+    color: $dark-grey;
 }
 
 .textSectionContainer {
@@ -37,6 +37,7 @@
     letter-spacing: 2px;
     text-align: center;
     font-family: $font;
+    color: $orange;
 }
 
 .basicHR {
@@ -59,6 +60,7 @@
     line-height: 2;
     letter-spacing: 2px;
     font-weight: normal;
+    font-size: 1.1em;
 }
 
 .blockquote {

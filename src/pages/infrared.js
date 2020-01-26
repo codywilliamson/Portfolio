@@ -29,7 +29,21 @@ const Infrared = () => {
                 showHR="none"
                 colorWiggleHR={orangeWiggleHR}
                 showWiggleHR="block"
-                message="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum nisi est, aperiam tempore distinctio laboriosam ut quas dolorem veritatis architecto, animi dolore libero hic, quia quasi quibusdam amet illo aut."
+                message={
+                    <span>
+                        <span className="textSectionEm">Far-infrared</span> uses <span className="textSectionEm">far-infrared</span> radiation,
+                        which refers to a subdivision of the electromagnetic spectrum. Infrared 
+                        is a type of light that humans can't see, but can feel as heat. "Far" describes
+                        where the wavelengths fall on the light spectrum.
+                        <br/>
+                        <br/>
+                        <span className="textSectionEm">Far Infrared Rays(FIR)</span> heat your muscles directly
+                         without the need to heat the air around you. <span className="textSectionEm">FIR</span> 
+                         enhances your energy purely by increased blood flow to the derma layer of your body. 
+                         This is why we use <span className="textSectionEm">FIR</span> technology, as it allows us to create Yooneek and Innovative
+                          products that not only help you perform, but take care of you at the same time.
+                    </span>
+                }
                 bgClass="whiteHexBg"
             />
 
