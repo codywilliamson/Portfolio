@@ -9,7 +9,11 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    color: $dark-grey;
+    color: $white;
+
+    .textSectionTitle {
+        color: $white;
+    }
 }
 
 .whiteHexBg {
@@ -54,7 +58,7 @@
 }
 
 .textSectionMsg {
-    font-family: 'Minion Pro', $font;
+    font-family: $text-section-font;
     text-align: center;
     width: 50rem;
     line-height: 2;
@@ -132,3 +136,41 @@
     }
 }
 
+.quoteSliderMaster {
+
+    .topLeftBQ {
+
+        @media (max-width:  500px) {
+            top: 7%;
+        }
+    }
+}
+
+.quoteSliderContainer {
+    width: 50rem;
+}
+
+.quoteTitle {
+    
+    @media (max-width: 400px) {
+        width: 40%;
+    }
+}
+
+.quote {
+
+    @media (max-width: 768px) {
+        width: 70%;
+        padding: 0 2.5rem;
+    }
+
+    @media (max-width: 500px) {
+        width: 50%;
+        padding: 0 1.5rem;
+    }
+
+    @media (max-width: 375px) {
+        width: 40%;
+        padding: 0;
+    }
+}

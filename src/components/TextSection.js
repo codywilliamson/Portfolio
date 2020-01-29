@@ -1,5 +1,4 @@
 import React from 'react'
-
 import topLeftBQ from '../assets/topLeftBQ.png'
 import bottomRightBQ from '../assets/bottomRightBQ.png'
 

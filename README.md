@@ -38,6 +38,8 @@ A quick look at the top-level files and directories you'll see in this project.
 1. [React Slick-Slider Port Carousel](https://react-slick.neostack.com/docs/get-started)
     1a. [Slick-Slider Custom Dots](https://gist.github.com/im-sad/aba39230a2992147151a06a915fc0800)
     1a. [Slick-Track large width fix](https://stackoverflow.com/questions/45735511/slick-slider-gets-wrong-width)
+1. [Configuring React Helmet to manage your site's document head -- SEO purposes](https://www.gatsbyjs.org/tutorial/part-eight/#add-page-metadata)
+
 
 ## Get Started
 

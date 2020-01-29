@@ -1,3 +1,7 @@
+// using google cdn for now
+// if chad wants to use google, then move this to
+// react helmet to utilize link tag for speed
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap');
 
 
 // reset
@@ -14,14 +18,15 @@ a {text-decoration:none;color:inherit;}
 $white: #fff;
 $orange: #EF8B34;
 $orange-rgb: rgba(239,139,52, .8);
-$dark-grey: #323232;
+$dark-grey: #363636;
+$em-red: #92140C;
 
 $black: #222;
 $light-grey: #dcdcdc;
 
 // base
-$font: Avenir, 'Helvetica Neue', system-ui, Helvetica, Arial, sans-serif;
-$text-section-font: "Minion Pro", Avenir, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font: 'Lato', 'Helvetica Neue', system-ui, Helvetica, Arial, sans-serif;
+$text-section-font: "Lato", Avenir, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $body-font-size: 1em;
 $title-font-size: 2.5em;
 

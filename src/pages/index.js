@@ -5,6 +5,7 @@ import HomeHeader from '../components/HomeHeader/HomeHeader'
 import TextSection from '../components/TextSection'
 import ProductGallery from '../components/ProductGallery'
 import LatestNews from '../components/LatestNews'
+import QuotesSlider from '../components/_QuotesSlider'
 import homeHeader from '../assets/headers/homeHeader.png'
 import whiteWiggleHR from '../assets/wiggleHR.svg'
 import orangeWiggleHR from '../assets/orangeWiggleHR.svg'
@@ -34,7 +35,7 @@ const Home = () => {
                 />
 
             <ProductGallery 
-                title="Featured Products"
+                title="Our Products"
                 showHR="none"
                 
                 />
@@ -44,20 +45,21 @@ const Home = () => {
                 showHR="none"
                 colorWiggleHR={whiteWiggleHR}
                 showWiggleHR="block"
-                message="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel rerum expedita aut. Voluptatem, nesciunt? Illo fugit pariatur commodi? Sapiente, quasi."
+                message={
+                    <span>
+                        <span className="textSectionEm">Far Infrared Rays (FIR)</span> heat your 
+                        muscles directly without the need to heat the air around you. <span className="textSectionEm">FIR</span> 
+                        enhances your energy purely by increased blood flow to the derma layer of your body. 
+                        This is why we use <span className="textSectionEm">FIR</span> technology, as it allows
+                         us to create Yooneek and Innovative products that not only help you perform, but 
+                         take care of you at the same time...
+                    </span>
+                }
                 bgClass="orangeBg"
                 display="block"
             />
 
-            <TextSection
-                title="What Customers Are Saying About Yooneek"
-                showHR="none"
-                colorWiggleHR={orangeWiggleHR}
-                showWiggleHR="block"
-                message="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel rerum expedita aut. Voluptatem, nesciunt? Illo fugit pariatur commodi? Sapiente, quasi."
-                bgClass="whiteBg"
-                display="block"
-                showBQs="block"
+            <QuotesSlider
             />
 
             <LatestNews />
