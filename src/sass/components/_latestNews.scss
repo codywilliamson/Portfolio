@@ -77,25 +77,24 @@
 .blogListContainer {
 
     .latestNewsImgTextContainer {
-        border: 2px solid $orange;
+        border: 0;
         margin: 3.5rem 0;
         padding: 1.5rem 1rem;
-        background: $white;
 
-        @media (max-width: 1024px) {
-            justify-content: center;
-        }
+        // @media (max-width: 1024px) {
+        //     justify-content: center;
+        // }
 
-        @media (max-width: 375px) {
-            padding: 1.5rem .1rem;
-        }
+        // @media (max-width: 375px) {
+        //     padding: 1.5rem .1rem;
+        // }
 
-        .latestNewsTextContainer {
+        // .latestNewsTextContainer {
 
-            @media (max-width: 1024px) {
-                flex-basis: 70%;
-            }
-        }
+        //     @media (max-width: 1024px) {
+        //         flex-basis: 70%;
+        //     }
+        // }
     }
 }
 

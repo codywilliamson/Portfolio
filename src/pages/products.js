@@ -19,16 +19,16 @@ const ProductsPage = () => {
             />
 
             <ProductGallery 
-                title="Leggings"
+                title="Our Products"
                 colorWiggleHR={orangeWiggleHR}
                 whichProduct="Leggings"
                 showHR="none"/>
 
-            <ProductGallery 
+            {/* <ProductGallery 
                 title="Extras"
                 hrClass="basicHR"
                 whichProduct="Extras"
-                showHR="block"/>
+                showHR="block"/> */}
 
             <PageHeader 
                 title="designed to work. better" 
@@ -37,14 +37,14 @@ const ProductsPage = () => {
             />
 
            <div className="whiteHexBg">
-           <TextSection 
+           {/* <TextSection 
                 title="Product Care" 
                 showHR="none"
                 colorWiggleHR={orangeWiggleHR}
                 showWiggleHR="block"
                 message="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel rerum expedita aut. Voluptatem, nesciunt? Illo fugit pariatur commodi? Sapiente, quasi. Illo fugit pariatur commodi? Sapiente, quasi. Illo fugit pariatur commodi? Sapiente, quasi. Illo fugit pariatur commodi? Sapiente, quasi."
                 display="none"
-                />
+                /> */}
 
             <FAQs />
            </div>

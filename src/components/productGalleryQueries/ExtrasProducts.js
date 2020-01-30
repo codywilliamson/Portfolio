@@ -50,9 +50,9 @@ const ExtrasProducts = () => {
                 fixed={edge.node.frontmatter.productImage.childImageSharp.fixed}
                 key={edge.node.id}
               />
-              <p className="productImageCaption">
-                {edge.node.frontmatter.title}
-              </p>
+              <div className="productImgOverlay flex flexHardCenter">
+              {edge.node.frontmatter.title}
+              </div>
             </Link>
           </li>
         )

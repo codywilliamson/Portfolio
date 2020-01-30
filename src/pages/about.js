@@ -25,12 +25,12 @@ const About = () => {
                 showWiggleHR="block"
                 message={
                     <span>
-                        What makes us YooNeek? Too many products are designed to simply
-                         compete in the market, but ours are designed for you. We're not stuck in the 
-                         rat race of trying to outdo the other guys. When you do that, you forget why 
-                         started in the first place. We know exactly why we're here. You want products 
-                         uniquely designed and made for you. With YooNeek products, you can spend less 
-                         time worrying about your gear performing, and spend more time being you.
+                        To us, <span className="yooneekSpan">YooNeek</span> is more than just a catchy title to identify our brand. 
+                        Rather, it's a way of highlighting our products' abilities to perform and 
+                        protect our customers through innovative technologies. We aren't caught up 
+                        with trying to compete with others in the market, because we know what we deliver 
+                        is something others aren't even doing. With <span className="yooneekSpan">YooNeek</span>, you can feel confident in your 
+                        gear performing at the high levels you strive for every day &mdash; <em>in YOUR own <span className="yooneekSpan">YooNeek</span> way.</em>
                     </span>
                 }
                 bgClass="whiteBg"
@@ -51,12 +51,12 @@ const About = () => {
                 showHR="block"
                 message={
                     <span>
-                        You know what you want. Not the gimmicks. You want something 
-                        that works, that lives up to its promise. You want a product 
-                        that's designed for you, not designed merely to compete against 
-                        other products. Because we all know, what makes something truly 
-                        unique is not just the difference between it and something else. 
-                        What makes it unique is you.
+                        We know what you want &mdash; equipment that works and lives up 
+                        to its promises. Products designed for you and designed to help 
+                        you achieve your goals. It's our job to deliver those products so 
+                        that you can focus on delivering results. We don't limit ourselves 
+                        to the norms of what has already been done, and becuase of this, you 
+                        won't be limited either.
                     </span>
                 }
             />

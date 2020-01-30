@@ -41,8 +41,8 @@ const Infrared = () => {
                         <br/>
                         <br/>
                         <span className="textSectionEm">Far Infrared Rays(FIR)</span> heat your muscles directly
-                         without the need to heat the air around you. <span className="textSectionEm">FIR</span> 
-                         enhances your energy purely by increased blood flow to the derma layer of your body. 
+                         without the need to heat the air around you. <span className="textSectionEm">FIR </span> 
+                           enhances your energy purely by increased blood flow to the derma layer of your body. 
                          This is why we use <span className="textSectionEm">FIR</span> technology, as it allows us to create Yooneek and Innovative
                           products that not only help you perform, but take care of you at the same time.
                     </span>
@@ -65,8 +65,8 @@ const Infrared = () => {
                 message={
                     <span>
                         <span className="textSectionEm">Far Infrared</span> is closer to the microwave 
-                        region of the electromagnetic spectrum. <span className="textSectionEm">Far Infrared</span> 
-                        waves are thermal. In other words, we experience this type of infrared radiation every day 
+                        region of the electromagnetic spectrum. <span className="textSectionEm">Far Infrared </span> 
+                         waves are thermal. In other words, we experience this type of infrared radiation every day 
                         in the form of heat! The heat that we feel from sunlight, a fire, a radiator or a warm 
                         sidewalk is infrared. The temperature-sensitive nerve endings in our skin can detect 
                         the difference between inside body temperature and outside skin temperature.

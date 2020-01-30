@@ -36,7 +36,7 @@ const LeggingsProducts = () => {
   return (
     <ul className="productImagesList">
       {// map through first 5 items of returned data
-      images.allMarkdownRemark.edges.slice(0, 5).map(edge => {
+      images.allMarkdownRemark.edges.slice(0, 4).map(edge => {
         return (
           // important to give both the li AND the <Img> component a unique key
           <li key={edge.node.id} className="productImageItem">
@@ -46,9 +46,9 @@ const LeggingsProducts = () => {
                 fixed={edge.node.frontmatter.productImage.childImageSharp.fixed}
                 key={edge.node.id}
               />
-              <p className="productImageCaption">
-                {edge.node.frontmatter.title}
-              </p>
+              <div className="productImgOverlay flex flexHardCenter">
+              {edge.node.frontmatter.title}
+              </div>
             </Link>
           </li>
         )
