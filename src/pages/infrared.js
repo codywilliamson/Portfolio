@@ -7,6 +7,8 @@ import infraredHeader from '../assets/headers/infraredFirstHeader.png'
 import secondHeader from '../assets/headers/infraredHeader.png'
 // import infraredVideo from '../assets/headers/infraredVideo.png'
 import InfraredBenefits from '../components/InfraredBenefits'
+import spectrumChart from '../assets/infraredChart.png'
+import lightChart from '../assets/infraredSecondChart.png'
 
 
 const Infrared = () => {
@@ -72,6 +74,11 @@ const Infrared = () => {
                 }
                 bgClass="whiteHexBg"
             />
+
+            <div className="chartsContainer flex flexHardCenter flexColumn">
+                <img src={spectrumChart} alt="Chart showcasing infrared spectrum" className="spectrumChart"/>
+                <img src={lightChart} alt="Chart showcasing visible light" className="lightChart"/>
+            </div>
 
 
         </Layout>
