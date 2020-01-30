@@ -28,21 +28,17 @@
 }
 
 .latestNewsImg {
-    width: 500px;
+    // width: 500px;
     height: 222px;
+    margin-right: 1rem;
 
-    @media (max-width: 510px) {
-        width: 320px;
-    }
-
-    @media (max-width: 375px) {
-        width: 280px;
+    @media (max-width: 780px) {
+        width: 85vw;
     }
 }
 
 .latestNewsImgContainer, .latestNewsTextContainer {
-    flex-basis: 45%;
-    margin: 0 1.5rem;
+    flex-basis: 47%;
 
     @media (max-width: 350px) {
         margin: 0;

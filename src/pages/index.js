@@ -1,14 +1,11 @@
 import React from "react"
 import Layout from '../components/Layout'
-import PageHeader from '../components/PageHeader'
 import HomeHeader from '../components/HomeHeader/HomeHeader'
 import TextSection from '../components/TextSection'
 import ProductGallery from '../components/ProductGallery'
 import LatestNews from '../components/LatestNews'
 import QuotesSlider from '../components/_QuotesSlider'
-import homeHeader from '../assets/headers/homeHeader.png'
 import whiteWiggleHR from '../assets/wiggleHR.svg'
-import orangeWiggleHR from '../assets/orangeWiggleHR.svg'
 
 const Home = () => {
     return (

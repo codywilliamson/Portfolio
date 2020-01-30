@@ -77,7 +77,7 @@ const ProductPage = (props) => {
                         </div>
                     </div>
 
-                    <a href="#" className="submit buyNow">Buy Now On Amazon</a>
+                    <a href={props.data.markdownRemark.frontmatter.amazonLink} className="submit buyNow">Buy Now On Amazon</a>
                 </div>
 
             </div>

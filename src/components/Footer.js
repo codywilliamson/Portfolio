@@ -50,9 +50,9 @@ const Footer = () => {
                     <button className="emailSignupButton" type="button">Sign Up</button>
                 </div>
 
-                <a href="#" className="footerPrivacyLink">
+                {/* <a href="#" className="footerPrivacyLink">
                     Privacy Policy &amp; Cookies Page
-                </a>
+                </a> */}
 
                 <p className="footerCopyight">
                     &copy; YOONEEK 2019

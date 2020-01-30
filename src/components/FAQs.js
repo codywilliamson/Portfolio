@@ -11,7 +11,8 @@ const FAQs = (props) => {
             <hr className="basicHR" />
 
             <ul className="faqList">
-                <li onClick={() => {
+                <li // eslint-disable-line jsx-a11y/click-events-have-key-events, jsx-a11y/no-noninteractive-element-interactions
+                onClick={() => {
                     document.getElementById("answer1").classList.toggle("answerClosed")
                     setTimeout(() => {
                         document.getElementById("answer1").classList.toggle("displayNone")
@@ -28,7 +29,8 @@ const FAQs = (props) => {
                 </li>
 
 
-                <li onClick={() => {
+                <li // eslint-disable-line jsx-a11y/click-events-have-key-events, jsx-a11y/no-noninteractive-element-interactions 
+                onClick={() => {
                     document.getElementById("answer2").classList.toggle("answerClosed")
                     setTimeout(() => {
                         document.getElementById("answer2").classList.toggle("displayNone")
@@ -44,7 +46,8 @@ const FAQs = (props) => {
                     </span>
                 </li>
 
-                <li onClick={() => {
+                <li // eslint-disable-line jsx-a11y/click-events-have-key-events, jsx-a11y/no-noninteractive-element-interactions 
+                onClick={() => {
                     document.getElementById("answer3").classList.toggle("answerClosed")
                     setTimeout(() => {
                         document.getElementById("answer3").classList.toggle("displayNone")

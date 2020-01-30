@@ -4,7 +4,7 @@ import PageHeader from '../components/PageHeader'
 import TextSection from '../components/TextSection'
 import orangeWiggleHR from '../assets/orangeWiggleHR.svg'
 import infraredHeader from '../assets/headers/infraredHeader.png'
-import infraredVideo from '../assets/headers/infraredVideo.png'
+// import infraredVideo from '../assets/headers/infraredVideo.png'
 import InfraredBenefits from '../components/InfraredBenefits'
 
 
@@ -18,11 +18,11 @@ const Infrared = () => {
                 bgImage={infraredHeader}
             />
 
-            <section className="videoSection">
+            {/* <section className="videoSection">
                 <a href="#" target="_blank" className="youTubeVideoLink">
                     <img src={infraredVideo} alt="" className="videoThumbnail"/>
                 </a>
-            </section>
+            </section> */}
 
             <TextSection 
                 title="About Far Infrared"

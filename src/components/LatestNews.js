@@ -37,7 +37,7 @@ const LatestNews = () => {
             </h3>
             
             
-          <div className="latestNewsImgTextContainer minionPro">
+          <div className="latestNewsImgTextContainer minionPro"> 
               <div className="latestNewsImgContainer fadeIn">
                   <Link to={`/blog/${blogPosts.allMarkdownRemark.edges[0].node.fields.slug}`}>
                   <Img

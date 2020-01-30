@@ -18,6 +18,12 @@ const Nav = () => {
         };
     }
 
+    function handleKeyDown(e) {
+        if (e.keyCode === 77) {
+            openMobileNav();
+        }
+    }
+
     // mobile nav function
     function openMobileNav() {
         // target elements
@@ -64,7 +70,13 @@ const Nav = () => {
                 </div>
 
                 <div className="navMenuBtnContainer flexHardCenter">
-                    <div id="navHamburger" className="navHamburger notActive" onClick={openMobileNav}>
+                    <div // eslint-disable-line jsx-a11y/no-noninteractive-element-interactions
+                        id="navHamburger"
+                        role="navigation"
+                        className="navHamburger notActive"
+                        onClick={openMobileNav}
+                        onKeyDown={handleKeyDown}
+                    >
                         <span className="hamburgerBar"></span>
                         <span className="hamburgerBar"></span>
                         <span className="hamburgerBar"></span>
