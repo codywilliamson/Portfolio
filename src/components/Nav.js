@@ -39,12 +39,7 @@ const Nav = () => {
         logo.classList.toggle('menuActive');
 
         // disable scrolling on the body while mobile nav is open
-        if (menu.classList.contains('mobile')) {
-            document.querySelector('body').classList.add('bodyNoScroll');
-        } else {
-            // ensure no scroll gets removed from body in all other scenarios
-            document.querySelector('body').classList.remove('bodyNoScroll');
-        }
+        document.querySelector('body').classList.toggle('bodyNoScroll');
     }
 
 

@@ -3,7 +3,8 @@ import Layout from '../components/Layout'
 import PageHeader from '../components/PageHeader'
 import TextSection from '../components/TextSection'
 import orangeWiggleHR from '../assets/orangeWiggleHR.svg'
-import infraredHeader from '../assets/headers/infraredHeader.png'
+import infraredHeader from '../assets/headers/infraredFirstHeader.png'
+import secondHeader from '../assets/headers/infraredHeader.png'
 // import infraredVideo from '../assets/headers/infraredVideo.png'
 import InfraredBenefits from '../components/InfraredBenefits'
 
@@ -47,13 +48,28 @@ const Infrared = () => {
                 bgClass="whiteHexBg"
             />
 
+            <PageHeader 
+                title="FIR-SKIN T&#43;"
+                headerStyle="pageTitle"
+                bgImage={secondHeader}
+            />
+
             <InfraredBenefits title="FIR-SKIN T &#43;" />
 
             <TextSection 
-                title="Technology &amp; How Far Infrared Works"
+                title="Far Infrared Spectrum"
                 showHR="block"
                 showWiggleHR="none"
-                message="Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum atque pariatur exercitationem voluptas nulla. Exercitationem quidem architecto harum vitae impedit dolores enim. Debitis aperiam molestias consectetur suscipit aliquam blanditiis tenetur deleniti numquam doloremque! Quod cupiditate rerum illo rem assumenda vero dignissimos voluptatibus itaque ex dolores nulla, nihil deleniti quae atque."
+                message={
+                    <span>
+                        <span className="textSectionEm">Far Infrared</span> is closer to the microwave 
+                        region of the electromagnetic spectrum. <span className="textSectionEm">Far Infrared</span> 
+                        waves are thermal. In other words, we experience this type of infrared radiation every day 
+                        in the form of heat! The heat that we feel from sunlight, a fire, a radiator or a warm 
+                        sidewalk is infrared. The temperature-sensitive nerve endings in our skin can detect 
+                        the difference between inside body temperature and outside skin temperature.
+                    </span>
+                }
                 bgClass="whiteHexBg"
             />
 

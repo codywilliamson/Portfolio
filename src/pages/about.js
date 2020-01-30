@@ -4,8 +4,8 @@ import PageHeader from '../components/PageHeader'
 import TextSection from '../components/TextSection'
 import orangeWiggleHR from '../assets/orangeWiggleHR.svg'
 import aboutHeader from '../assets/headers/aboutHeader.png'
-import aboutPageImg from '../assets/aboutPageImg.png'
 import aboutSecondHeader from '../assets/headers/aboutSecondHeader.png'
+import aboutThirdHeader from '../assets/headers/aboutThirdHeader.png'
 
 const About = () => {
     return (
@@ -19,19 +19,26 @@ const About = () => {
             />
 
             <TextSection 
-                title="Brand Story"
+                title="Our Brand"
                 showHR="none"
                 colorWiggleHR={orangeWiggleHR}
                 showWiggleHR="block"
-                textSectionImg={aboutPageImg}
-                showImg="block"
-                message="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore, odio a earum cum recusandae ipsam non, perferendis aliquid dolores iure dignissimos omnis expedita optio libero excepturi architecto tempora quod cumque magnam exercitationem et autem. Obcaecati impedit nemo necessitatibus, debitis hic fugiat recusandae magnam. Laboriosam enim, quia aliquid dolores obcaecati natus maiores, deserunt consequatur illo provident aliquam aperiam. Nisi labore excepturi accusamus esse. Rerum soluta quis porro asperiores delectus sit incidunt."
+                message={
+                    <span>
+                        What makes us YooNeek? Too many products are designed to simply
+                         compete in the market, but ours are designed for you. We're not stuck in the 
+                         rat race of trying to outdo the other guys. When you do that, you forget why 
+                         started in the first place. We know exactly why we're here. You want products 
+                         uniquely designed and made for you. With YooNeek products, you can spend less 
+                         time worrying about your gear performing, and spend more time being you.
+                    </span>
+                }
                 bgClass="whiteBg"
             />
 
             <PageHeader 
                 id="aboutSecondHeader"
-                title="warmth without the weight"
+                title="yooneek"
                 headerStyle="pageTitle"
                 bgImage={aboutSecondHeader}
             />
@@ -40,15 +47,25 @@ const About = () => {
             <div className="whiteHexBg">
 
             <TextSection 
-                title="Philosophy"
+                title="Our Philosophy"
                 showHR="block"
-                message="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore, odio a earum cum recusandae ipsam non, perferendis aliquid dolores iure dignissimos omnis expedita optio libero excepturi architecto tempora quod cumque magnam exercitationem et autem. Obcaecati impedit nemo necessitatibus, debitis hic fugiat recusandae magnam. Laboriosam enim, quia aliquid dolores obcaecati natus maiores, deserunt consequatur illo provident aliquam aperiam. Nisi labore excepturi accusamus esse. Rerum soluta quis porro asperiores delectus sit incidunt."
+                message={
+                    <span>
+                        You know what you want. Not the gimmicks. You want something 
+                        that works, that lives up to its promise. You want a product 
+                        that's designed for you, not designed merely to compete against 
+                        other products. Because we all know, what makes something truly 
+                        unique is not just the difference between it and something else. 
+                        What makes it unique is you.
+                    </span>
+                }
             />
 
-            <TextSection 
-                title="Company Info"
-                showHR="block"
-                message="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore, odio a earum cum recusandae ipsam non, perferendis aliquid dolores iure dignissimos omnis expedita optio libero excepturi architecto tempora quod cumque magnam exercitationem et autem. Obcaecati impedit nemo necessitatibus, debitis hic fugiat recusandae magnam. Laboriosam enim, quia aliquid dolores obcaecati natus maiores, deserunt consequatur illo provident uta quis porro asperiores delectus sit incidunt."
+            <PageHeader 
+                id="aboutSecondHeader"
+                title="warmth without the weight"
+                headerStyle="pageTitle"
+                bgImage={aboutThirdHeader}
             />
 
             </div>
