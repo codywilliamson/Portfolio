@@ -7,30 +7,28 @@ const LeggingsProducts = () => {
   // use gatsby-transformer-sharp to dynamically resize images
   // specify products/ dir to only retrieve images from there
   const images = useStaticQuery(graphql`
-    query {
-        allMarkdownRemark(filter: {frontmatter: {category: {eq:"Leggings"} }}) {
-          edges {
-            node {
-              id
-              frontmatter {
-                title
-                category
-                productImage {
-                  childImageSharp {
-                    fixed(width: 225, height: 225) {
-                      ...GatsbyImageSharpFixed
-                    }
-                  }
+  {
+    allMarkdownRemark(filter: {frontmatter: {blog: {eq: false}, category: {eq: "Leggings"}}}) {
+      edges {
+        node {
+          id
+          frontmatter {
+            title
+            productImage {
+              childImageSharp {
+                fixed(width: 225, height: 225) {
+                  ...GatsbyImageSharpFixed
                 }
-              }
-              fields {
-                slug
               }
             }
           }
+          fields {
+            slug
+          }
         }
       }
-      
+    }
+  }   
   `)
 
   return (

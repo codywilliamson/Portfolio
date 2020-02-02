@@ -8,7 +8,7 @@ const Nav = () => {
             // target nav
             let nav = document.querySelector(".navContainer");
 
-            // if body scrolls more than 100 px, add class
+            // if body scrolls more than 100 px, add class to nav
             if (document.body.scrollTop >= 100 || document.documentElement.scrollTop >= 100) {
                 nav.classList.add("bodyScrolled");
             } else {
@@ -30,6 +30,7 @@ const Nav = () => {
         let hamburger = document.getElementById('navHamburger');
         let menu = document.querySelector('.menuContainer');
         let logo = document.querySelector('.navLogo');
+        let menuItems = document.querySelectorAll(".menuItem");
 
         // toggle classes
         hamburger.classList.toggle('notActive');
@@ -39,7 +40,15 @@ const Nav = () => {
         logo.classList.toggle('menuActive');
 
         // disable scrolling on the body while mobile nav is open
-        document.querySelector('body').classList.toggle('bodyNoScroll');
+        menuItems.forEach(item => {
+            item.addEventListener('click', event => {
+                if (menu.classList.contains("mobile")) {
+                    document.querySelector('body').classList.remove('bodyNoScroll');
+                } else {
+                    document.querySelector('body').classList.toggle('bodyNoScroll');
+                }
+            })
+        })
     }
 
 
@@ -62,6 +71,7 @@ const Nav = () => {
                     <Link to="/infrared" className="menuItem" activeClassName="activeItem">Far Infrared</Link>
                     <Link to="/about" className="menuItem" activeClassName="activeItem">About</Link>
                     <Link to="/contact" className="menuItem" activeClassName="activeItem">Contact Us</Link>
+                    <Link to="/blogs" className="menuItem" activeClassName="activeItem">Blog</Link>
                 </div>
 
                 <div className="navMenuBtnContainer flexHardCenter">

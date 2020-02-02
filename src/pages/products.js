@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from '../components/Layout'
 import PageHeader from '../components/PageHeader'
-import TextSection from '../components/TextSection'
+// import TextSection from '../components/TextSection'
 import ProductGallery from '../components/ProductGallery'
 import productsHeader from '../assets/headers/productsHeader.png'
 import productsMidPage from '../assets/headers/productsMidPageHeader.png'

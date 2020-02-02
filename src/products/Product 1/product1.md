@@ -1,22 +1,24 @@
 ---
-title: Product 1
-date: 01-01-19
-productImage: adidas_x_Universal_Standard_3_Stripes_7_8_Leggings_Black_FJ7470_21_model.jpg
+title: 'Infrared Fir-Skin T+ Men &amp; Women Half-Finger Gloves'
+color: Black
+Sizes: Unisex
 category: Leggings
-description: 'This is sample content. This is sample content. This is sample content. This is sample content. This is sample content. This is sample content.
-This is sample content.
-This is sample content.'
-benefits: 'This is sample content. This is sample content. This is sample content. This is sample content. This is sample content. This is sample content.
-This is sample content.
-This is sample content.'
+productImageTitle: 'UPF 50+ UV Sun Protection Glove Sun Block'
+bulletPointOne: 'Warmth without the weight, wrist length with half-finger coverage'
+bulletPointTwo: 'Anti-UV SPF50+ ultimate sun protection when walking, driving, outdoors'
+bulletPointThree: '88% Polyester, 12% Spandex'
+showSizingChart: true
+price: $24.99
 amazonLink: https://amazon.com
 blog: false
+productImage: YooneekInfraredFir-SkinT+MenWomenHalf-FingerGloves.MAIN.jpg
+bulletPoints: product1Pts.md
 ---
 
-This is sample content. This is sample content. This is sample content. This is sample content. This is sample content. This is sample content.
-This is sample content.
-This is sample content.
+FIR-SKINT+ fabric has Titanium particles which enhances the body's own Far Infrared Rays (FIR) emissions unlike other thermal insulation. 
 
-This is sample content.This is sample content.
-This is sample content.This is sample content.This is sample content.This is sample content.This is sample content.This is sample content.This is sample content.This is sample content.This is sample content.
-This is sample content.This is sample content.This is sample content.This is sample content.This is sample content.This is sample content.This is sample content.
+Muscles work harder for longer. Muscles regeneration aids better recovery. 
+
+Improved body metabolism | Deodorization.
+
+UPF 50+ protection against 98% of UVA and UVB rays.

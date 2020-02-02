@@ -1,6 +1,9 @@
 import React, { Component } from "react"
-import FirstImage from "../../assets/headers/homeHeader.png"
-import SecondImage from "../../assets/headers/productsHeader.png"
+import imgOne from '../../assets/headers/homeSlider/homeOne.png'
+import imgTwo from '../../assets/headers/homeSlider/homeTwo.png'
+import imgThree from '../../assets/headers/homeSlider/homeThree.png'
+import imgFour from '../../assets/headers/homeSlider/homeFour.png'
+import imgFive from '../../assets/headers/homeSlider/homeFive.png'
 import Slider from 'react-slick'
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
@@ -25,12 +28,27 @@ export default class HomeHeader extends Component {
             <div className="homeSlideContainer">
                 <Slider {...settings}>
                     <div className="slideContainer">
-                        <div className="pageHeaderContainer" style={{ backgroundImage:  `url(${FirstImage})` }}>
+                        <div className="pageHeaderContainer" style={{ backgroundImage:  `url(${imgOne})` }}>
 
                         </div>
                     </div>
                     <div className="slideContainer">
-                        <div className="pageHeaderContainer" style={{ backgroundImage:  `url(${SecondImage})` }}>
+                        <div className="pageHeaderContainer" style={{ backgroundImage:  `url(${imgTwo})` }}>
+
+                        </div>
+                    </div>
+                    <div className="slideContainer">
+                        <div className="pageHeaderContainer" style={{ backgroundImage:  `url(${imgThree})` }}>
+
+                        </div>
+                    </div>
+                    <div className="slideContainer">
+                        <div className="pageHeaderContainer" style={{ backgroundImage:  `url(${imgFour})` }}>
+
+                        </div>
+                    </div>
+                    <div className="slideContainer">
+                        <div className="pageHeaderContainer" style={{ backgroundImage:  `url(${imgFive})` }}>
 
                         </div>
                     </div>

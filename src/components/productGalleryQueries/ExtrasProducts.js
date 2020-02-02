@@ -11,30 +11,29 @@ const ExtrasProducts = () => {
   // im sure there is a better way, but this is my first run with React
   // and i've only got a month to push this site out so will revisit.
   const images = useStaticQuery(graphql`
-    query {
-        allMarkdownRemark(filter: {frontmatter: {category: {eq:"Extras"} }}) {
-          edges {
-            node {
-              id
-              frontmatter {
-                title
-                category
-                productImage {
-                  childImageSharp {
-                    fixed(width: 225, height: 225) {
-                      ...GatsbyImageSharpFixed
-                    }
-                  }
+  query ExtraProducts {
+    allMarkdownRemark(filter: {frontmatter: {blog: {eq: false}, category: {eq: "Extras"}}}, sort: {order: DESC}) {
+      edges {
+        node {
+          fields {
+            slug
+          }
+          frontmatter {
+            title
+            productImageTitle
+            productImage {
+              childImageSharp {
+                fixed {
+                    ...GatsbyImageSharpFixed
                 }
-              }
-              fields {
-                slug
               }
             }
           }
         }
       }
-      
+    }
+  }
+  
   `)
 
   return (
@@ -47,7 +46,7 @@ const ExtrasProducts = () => {
             <Link to={`/product/${edge.node.fields.slug}`}>
               <Img
                 className="productImage"
-                fixed={edge.node.frontmatter.productImage.childImageSharp.fixed}
+                fixed={edge.node.frontmatter.productImage.childImageSharp.fluid}
                 key={edge.node.id}
               />
               <div className="productImgOverlay flex flexHardCenter">

@@ -16,57 +16,106 @@
 .singleProductItemContainer {
     padding: 2.5rem 1.5rem;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: row;
     justify-content: center;
+    max-width: 1500px;
     flex-flow: wrap;
 }
 
 .singleProductImage {
-    width: 425px;
-    // height: 550px;
+    width: 20rem;
 }
 
 .singleProductImgContainer,
 .singleProductInfoContainer {
     flex-basis: 50%;
+
+    @media (max-width: 768px) {
+        flex-basis: 80%;
+    }
+
+    @media (max-width: 530px) {
+        flex-basis: 100%;
+    }
 }
 
 .singleProductInfoContainer {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    flex-direction: column;
-    height: 550px;
     color: $dark-grey;
 
     .singleProductName {
         text-transform: uppercase;
         font-weight: bold;
         letter-spacing: 2px;
-        font-size: 2em;
+        font-size: 1.5em;
+
+        @media (max-width: 768px) {
+            text-align: center;
+        }
+    }
+}
+
+.productHr {
+
+    @media (max-width: 768px) {
+        width: 100%;
+    }
+}
+
+.singleProductImgContainer {
+
+    @media (max-width: 768px) {
+        margin-bottom: 3rem;
+        flex-direction: row;
     }
 
-    .paragraphContainer {
-        margin: 2.3rem 0;
+    @media (max-width: 445px) {
+        flex-direction: column;
     }
+}
 
-    .productInfoHeading {
-        font-weight: bold;
-        font-size: .95em;
-        letter-spacing: 1px;
-    }
+.productImageDescription {
+    max-width: 400px;
+    line-height: 1.5;
+    margin-top: 1rem;
+}
 
-    .productDescription {
-        width: 50%;
-        letter-spacing: 1px;
-        font-size: .9em;
+.productPoints {
+    list-style-type: disc;
+    margin: 1rem;
+
+    @media (max-width: 325px) {
+        margin-left: 1.5rem;
     }
+}
+
+.sizeChart {
+    width: 20rem;
+    margin: 1rem 0;
+}
+
+.productCareIcons {
+    align-items: center;
+    flex-flow: wrap;
+}
+
+.productCareIcon {
+    width: 3rem;
+    margin: .55rem;
+}
+
+.buyNowContainer {
+    justify-content: center;
+    margin: 1rem 0;
 }
 
 .buyNow {
     width: auto;
     padding: .5rem 2rem;
+    margin-top: 1rem;
 }
 
 .productReviewsContainer {
@@ -77,58 +126,4 @@
 
 .fullWidthHR {
     width: 100%;
-}
-
-@media (max-width: 768px) {
-    .singleProductImgContainer,
-    .singleProductInfoContainer {
-        flex-basis: 100%;
-    }
-
-    .productInfoPgs {
-        width: 50%;
-    }
-
-    .singleProductInfoContainer .paragraphContainer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-
-        .productDescription {
-            width: auto;
-        }
-
-        .productInfoHeading {
-            align-self: flex-start;
-        }
-    }
-
-    .singleProductInfoContainer {
-        justify-content: center;
-        height: auto;
-        align-items: center;
-        margin-top: 4rem;
-
-        .submit {
-            align-self: center;
-        }
-    }
-}
-
-@media (max-width: 500px) {
-    .singleProductInfoContainer {
-        padding: 0;
-    }
-    .singleProductItemContainer {
-        padding: 0;
-    }
-    .singleProductImage {
-        width: 320px;
-        height: auto;
-    }
-
-    .productInfoPgs {
-        width: 70%;
-    }
 }
