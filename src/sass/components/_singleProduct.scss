@@ -92,6 +92,10 @@
     }
 }
 
+.productPoint {
+    margin: 1rem 0;
+}
+
 .sizeChart {
     width: 20rem;
     margin: 1rem 0;
@@ -122,6 +126,18 @@
     width: 80%;
     margin: 3rem 0;
     color: $dark-grey;
+    max-width: 1200px;
+    font-family: $font;
+}
+
+.reviewContainer {
+    margin: 2.3rem 0;
+}
+
+.reviewTitle {
+    color: $orange;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 .fullWidthHR {

@@ -25,17 +25,18 @@ export const query = graphql`
                   }
                 amazonLink
                 Sizes
-                bulletPointOne
-                bulletPointThree
-                bulletPointTwo
                 color
                 price
                 showSizingChart
                 productImageTitle
+                reviews {
+                    childMarkdownRemark {
+                      html
+                    }
+                  }
                 bulletPoints {
                     childMarkdownRemark {
                       html
-                      rawMarkdownBody
                     }
                   }
             }
@@ -99,17 +100,7 @@ const ProductPage = (props) => {
                             SIZES: <b>{props.data.markdownRemark.frontmatter.Sizes}</b>
                         </p>
 
-                        <ul className="productPoints">
-                            <li className="productPoint">
-                                {props.data.markdownRemark.frontmatter.bulletPointOne}
-                            </li>
-                            <li className="productPoint">
-                                {props.data.markdownRemark.frontmatter.bulletPointTwo}
-                            </li>
-                            <li className="productPoint">
-                                {props.data.markdownRemark.frontmatter.bulletPointThree}
-                            </li>
-                        </ul>
+                        <ul className="productPoints" dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.frontmatter.bulletPoints.childMarkdownRemark.html }} /> 
 
                         <img src={sizingChart} alt="Chart showcasing sizes of glovesSizingChart" className="sizeChart" style={{display: showChart}}/>
                         
@@ -132,7 +123,6 @@ const ProductPage = (props) => {
                             PRICE: {props.data.markdownRemark.frontmatter.price}
                         </p>
                         <a href={props.data.markdownRemark.frontmatter.amazonLink} className="submit buyNow" target="_blank" rel="noopener noreferrer">Buy Now On Amazon</a>
-                        <div dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.frontmatter.bulletPoints.childMarkdownRemark.html }} />
                     </div> 
                 </div>
 
@@ -146,7 +136,7 @@ const ProductPage = (props) => {
 
                 <hr className="basicHR fullWidthHR"/>
 
-                
+                <div className="" dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.frontmatter.reviews.childMarkdownRemark.html }}></div>
             </div>
 
             </div>

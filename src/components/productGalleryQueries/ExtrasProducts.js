@@ -12,7 +12,7 @@ const ExtrasProducts = () => {
   // and i've only got a month to push this site out so will revisit.
   const images = useStaticQuery(graphql`
   query ExtraProducts {
-    allMarkdownRemark(filter: {frontmatter: {blog: {eq: false}, category: {eq: "Extras"}}}, sort: {order: DESC}) {
+    allMarkdownRemark(filter: {frontmatter: {blog: {eq: false}, category: {eq: "Extras"}}}) {
       edges {
         node {
           fields {
@@ -43,7 +43,7 @@ const ExtrasProducts = () => {
         return (
           // important to give both the li AND the <Img> component a unique key
           <li key={edge.node.id} className="productImageItem">
-            <Link to={`/product/${edge.node.fields.slug}`}>
+            <Link to={`/products/${edge.node.fields.slug}`}>
               <Img
                 className="productImage"
                 fixed={edge.node.frontmatter.productImage.childImageSharp.fluid}

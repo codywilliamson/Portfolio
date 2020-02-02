@@ -43,7 +43,7 @@ module.exports.createPages = async ({ graphql, actions }) => {
         pathName = 'blog';
       } else {
         templateToUse = productTemplate;
-        pathName = 'product';
+        pathName = 'products';
       }
 
         createPage({

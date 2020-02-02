@@ -40,7 +40,7 @@ A quick look at the top-level files and directories you'll see in this project.
     1a. [Slick-Track large width fix](https://stackoverflow.com/questions/45735511/slick-slider-gets-wrong-width)
 1. [Configuring React Helmet to manage your site's document head -- SEO purposes](https://www.gatsbyjs.org/tutorial/part-eight/#add-page-metadata)
 1. [Hosting Google Fonts through prefetching instead of relying on external stylesheet](https://www.gatsbyjs.org/packages/gatsby-plugin-prefetch-google-fonts/)
-
+1. [Emmets support in MD files](https://stackoverflow.com/questions/49956963/markdown-not-using-emmet)
 
 ## Get Started
 
