@@ -1,23 +1,19 @@
 /**
  * Configure your Gatsby site with this file.
- *
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
 
 module.exports = {
-  /* Your site config here */
 
   plugins: [
-    // sass support
-    `gatsby-plugin-sass`,
-    // for optimizing & transforming images using graphql
-    `gatsby-plugin-sharp`,
-    `gatsby-transformer-sharp`,
-    `gatsby-transformer-remark`,
-    `gatsby-plugin-react-helmet`,
-    // https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap
+    // plugins
+    `gatsby-plugin-sass`,                                // sass compilation
+    `gatsby-plugin-sharp`,                               // for optimizing & transforming images using graphql
+    `gatsby-transformer-sharp`,                          // for optimizing & transforming images using graphql
+    `gatsby-transformer-remark`,                         // parsing markdown files
+    `gatsby-plugin-react-helmet`,                        // manipulating document head (seo)
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: `gatsby-plugin-prefetch-google-fonts`,    // prefetching lato google font to reduce external stylesheet dependencies
       options: {
         fonts: [
           {
@@ -27,34 +23,15 @@ module.exports = {
         ],
       },
     },
-    // for sourcing data from local filesystem
-    // check https://www.gatsbyjs.org/packages/gatsby-source-filesystem/?=gatsby%20source
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: `gatsby-source-filesystem`,               // for sourcing the file system (https://www.gatsbyjs.org/packages/gatsby-source-filesystem/)
       options: {
         name: `src`,
         path: `${__dirname}/src`
       }
     },
-    // source products directory
     {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `products`,
-        path: `${__dirname}/src/products`
-      }
-    },
-    // source blogs directory
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `blogs`,
-        path: `${__dirname}/src/blogs`
-      }
-    },
-    // load self hosted fonts
-    {
-      resolve: `gatsby-plugin-web-font-loader`,
+      resolve: `gatsby-plugin-web-font-loader`,         // load self hosted fonts
       options: {
         custom: {
           families: [
@@ -65,8 +42,7 @@ module.exports = {
       }
     }
   ],
-  // site details
-  siteMetadata: {
+  siteMetadata: {                                       // site details
     title: `Yooneek`,
     author: `Mindvolt`,
     description: `Website for Yooneek Products`

@@ -6,8 +6,8 @@ Sizes: N/A
 price: $34.99
 reviews: reviews.md
 category: Leggings
-amazonLink: https://amazon.com
-productImage: reel-case.jpg
+amazonLink: "https://www.amazon.com/Yooneek-Soft-Sided-Organizer-Excellent-Exclusive/dp/B081J31PLW/ref=sr_1_6?dchild=1&keywords=YOONEEK&qid=1580702379&sr=8-6"
+productImage: reel-case.jpeg
 bulletPoints: bulletPoints.md
 showSizingChart: false
 productImageTitle: 'Six Elastic Pocket Storage Organizer'

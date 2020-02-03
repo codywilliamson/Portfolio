@@ -1,12 +1,12 @@
 ---
 blog: false
-title: 'Infrared Fir-Skin T+ Men & Women Full Finger Gloves'
+title: "Infrared Fir-Skin T+ Men & Women Full Finger Gloves"
 color: Black
 Sizes: Unisex
 price: $29.99
 reviews: reviews.md
 category: Leggings
-amazonLink: https://amazon.com
+amazonLink: "https://www.amazon.com/YOONEEK-FIR-Skin-SPF50-Full-Finger-Gloves/dp/B083QNWH2Q/ref=sr_1_1?dchild=1&keywords=YOONEEK&qid=1580702379&sr=8-1"
 productImage: full-finger-gloves.jpg
 bulletPoints: bulletPoints.md
 showSizingChart: true

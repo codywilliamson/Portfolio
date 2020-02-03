@@ -6,7 +6,7 @@ Sizes: Unisex
 price: $24.99
 reviews: reviews.md
 category: Leggings
-amazonLink: https://amazon.com
+amazonLink: "https://www.amazon.com/YOONEEK-FIR-Skin-Half-Finger-Gloves-X-Small/dp/B083QN681P/ref=sr_1_5?dchild=1&keywords=YOONEEK&qid=1580702379&sr=8-5&th=1"
 productImage: half-finger-gloves.jpg
 bulletPoints: bulletPoints.md
 showSizingChart: true
