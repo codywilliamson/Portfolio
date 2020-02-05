@@ -31,7 +31,8 @@
     path {
         stroke-dasharray: 1000;
         stroke-dashoffset: 1000;
-        animation: animateOutline 3s linear forwards;
+        -webkit-animation: animateOutline 3s linear forwards;
+                animation: animateOutline 3s linear forwards;
     }
 
     @media (max-width: 500px) {
@@ -48,6 +49,14 @@
     font-size: 5em;
     font-weight: bold;
     text-align: center;
+}
+
+
+
+@-webkit-keyframes animateOutline {
+    to {
+        stroke-dashoffset: 0;
+    }
 }
 
 
@@ -72,12 +81,20 @@
 
 .slick-dots {
     padding: 3rem !important;
+
+    @media (max-width: 500px) {
+        padding: 1rem !important;
+    }
 }
 
 .circle {
     border-radius: 100%;
     padding: 1rem;
     border: 2px solid $orange;
+
+    @media (max-width: 500px) {
+        padding: .5rem;
+    }
 }
 
 .slick-active {
@@ -90,4 +107,8 @@
 
 .slick-dots li {
     margin: -5rem 2rem -3.5rem 2rem !important;
+
+    @media (max-width: 500px) {
+        margin: -2rem 1rem !important;
+    }
 }

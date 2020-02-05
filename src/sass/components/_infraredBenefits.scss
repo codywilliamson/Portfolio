@@ -1,7 +1,10 @@
 .infraredBenefitsContainer {
+    display: -webkit-box;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+            justify-content: center;
     background: $white;
     margin: 2rem 0;
 }
@@ -10,27 +13,42 @@
     color: $orange;
     width: 80%;
     border: 2px solid $orange; 
+    display: -webkit-box; 
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
 }
 
 .benefitsCardContainer {
     width: 100%;
+    display: -webkit-box;
     display: flex;
-    align-items: baseline;
-    justify-content: space-evenly;
-    flex-direction: row;
+    -webkit-box-align: baseline;
+            align-items: baseline;
+    -webkit-box-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+            flex-direction: row;
     flex-flow: wrap;
     padding: 1rem;
 }
 
 .benefitsCard {
+    display: -webkit-box;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
 }
 
 .benefitsImg {

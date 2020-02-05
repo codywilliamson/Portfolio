@@ -2,10 +2,15 @@
     background: $orange;
     text-align: center;
     color: $white;
+    display: -webkit-box;
     display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-evenly;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+            justify-content: space-evenly;
     padding: 3rem 0;
 
     * {
@@ -42,6 +47,26 @@
     outline: 0;
     border: 1px solid $white;
     padding: .3rem 0;
+
+    &::-webkit-input-placeholder {
+        // 508 compliant? 
+        color: $orange;
+    }
+
+    &::-moz-placeholder {
+        // 508 compliant? 
+        color: $orange;
+    }
+
+    &:-ms-input-placeholder {
+        // 508 compliant? 
+        color: $orange;
+    }
+
+    &::-ms-input-placeholder {
+        // 508 compliant? 
+        color: $orange;
+    }
 
     &::placeholder {
         // 508 compliant? 

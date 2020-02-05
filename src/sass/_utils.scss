@@ -42,21 +42,29 @@ body, html {
 }
 
 .flexHardCenter {
+    display: -webkit-box;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+            justify-content: center;
 }
 
 .flex {
+    display: -webkit-box;
     display: flex;
 }
 
 .flexColumn {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
 }
 
 .flexRow {
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+            flex-direction: row;
 }
 
 .minionPro {
@@ -64,11 +72,22 @@ body, html {
 }
 
 .fadeIn {
-    animation: fadeIn 1.3s ease-in-out;
+    -webkit-animation: fadeIn 1.3s ease-in-out;
+            animation: fadeIn 1.3s ease-in-out;
 }
 
 .sr-only {
     display: none;
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 @keyframes fadeIn {

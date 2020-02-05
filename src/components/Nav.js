@@ -18,6 +18,7 @@ const Nav = () => {
         };
     }
 
+    // add keyboard listener for mobile nav
     function handleKeyDown(e) {
         if (e.keyCode === 77) {
             openMobileNav();

@@ -4,7 +4,7 @@
  */
 
 module.exports = {
-
+  pathPrefix: '/',                                      // adding path for static files
   plugins: [
     // plugins
     `gatsby-plugin-sass`,                                // sass compilation
@@ -30,17 +30,17 @@ module.exports = {
         path: `${__dirname}/src`
       }
     },
-    {
-      resolve: `gatsby-plugin-web-font-loader`,         // load self hosted fonts
-      options: {
-        custom: {
-          families: [
-            `Minion Pro`
-          ],
-          urls: [`fonts.css`]
-        }
-      }
-    }
+    // {
+    //   resolve: `gatsby-plugin-web-font-loader`,         // load self hosted fonts
+    //   options: {
+    //     custom: {
+    //       families: [
+    //         `Minion Pro`
+    //       ],
+    //       urls: [`fonts.css`]
+    //     }
+    //   }
+    // }
   ],
   siteMetadata: {                                       // site details
     title: `Yooneek`,

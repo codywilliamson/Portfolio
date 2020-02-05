@@ -1,5 +1,5 @@
 import React from 'react'
-
+// import { withPrefix } from 'gatsby'
 
 const ContactForm = (props) => {
     return (
@@ -12,7 +12,8 @@ const ContactForm = (props) => {
                 We'd love to hear from you!
             </h3>
 
-            <form action="" className="contactForm flexHardCenter">
+            {/* not sure if this is correct... */}
+            <form action="../../contact.php" method="post" className="contactForm flexHardCenter">
 
                 <label htmlFor="firstName" className="sr-only">First Name:</label>
                 <input type="text" name="firstName" id="firstName" placeholder="first name" className="contactInput" />

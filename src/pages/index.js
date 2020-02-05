@@ -20,11 +20,11 @@ const Home = () => {
                 message={
                     /* to pass HTML as prop, use JSX */
                     <span>
-                        Why "<b>Yooneek</b>"? It must be said that there's unique stuff all 
+                        Why "<span className="yooneekSpan">Yooneek</span>"? It must be said that there's unique stuff all 
                         over the market place. From the traditional retailers to the startups, 
-                        everyone has an angle on "<b>Yooneek</b>". But are you really looking 
+                        everyone has an angle on "<span className="yooneekSpan">Yooneek</span>". But are you really looking 
                         for someone else's take on unique? Unique doesn't just have to refer to 
-                        style, or price, or modern or antique &mdash; Yooneek just means "<b>made for you</b>".
+                        style, or price, or modern or antique &mdash; <span className="yooneekSpan">Yooneek</span> just means "<b>made for you</b>".
                     </span>
                 }
                 bgClass="whiteBg"

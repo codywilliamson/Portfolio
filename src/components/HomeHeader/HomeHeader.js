@@ -11,15 +11,18 @@ import "slick-carousel/slick/slick-theme.css"
 
 export default class HomeHeader extends Component {
     render() {
+        // slick slider settings
         const settings = {
             dots: true,
-            infinite: true,
+            fade: true,
             speed: 1000,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            autoplay: true,
-            autoplaySpeed: 3000,
             cssEase: "linear",
+            autoplay: true,
+            infinite: true,
+            lazyLoad: true,
+            slidesToShow: 1,
+            autoplaySpeed: 3000,
+            slidesToScroll: 1,
             customPaging: i => (
                     <div className="circle"></div>
             )
@@ -28,29 +31,19 @@ export default class HomeHeader extends Component {
             <div className="homeSlideContainer">
                 <Slider {...settings}>
                     <div className="slideContainer">
-                        <div className="pageHeaderContainer" style={{ backgroundImage:  `url(${imgOne})` }}>
-
-                        </div>
+                        <div className="pageHeaderContainer" style={{ backgroundImage:  `url(${imgOne})` }}></div>
                     </div>
                     <div className="slideContainer">
-                        <div className="pageHeaderContainer" style={{ backgroundImage:  `url(${imgTwo})` }}>
-
-                        </div>
+                        <div className="pageHeaderContainer" style={{ backgroundImage:  `url(${imgTwo})` }}></div>
                     </div>
                     <div className="slideContainer">
-                        <div className="pageHeaderContainer" style={{ backgroundImage:  `url(${imgThree})` }}>
-
-                        </div>
+                        <div className="pageHeaderContainer" style={{ backgroundImage:  `url(${imgThree})` }}></div>
                     </div>
                     <div className="slideContainer">
-                        <div className="pageHeaderContainer" style={{ backgroundImage:  `url(${imgFour})` }}>
-
-                        </div>
+                        <div className="pageHeaderContainer" style={{ backgroundImage:  `url(${imgFour})` }}></div>
                     </div>
                     <div className="slideContainer">
-                        <div className="pageHeaderContainer" style={{ backgroundImage:  `url(${imgFive})` }}>
-
-                        </div>
+                        <div className="pageHeaderContainer" style={{ backgroundImage:  `url(${imgFive})` }}></div>
                     </div>
                 </Slider>
                 <div className="yooneekOutlineContainer flex flexHardCenter">

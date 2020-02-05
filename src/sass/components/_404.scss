@@ -20,6 +20,7 @@
         padding: .3rem;
         border-radius: 4px;
         font-weight: bold;
+        -webkit-transition: all ease-in-out .3s;
         transition: all ease-in-out .3s;
 
         &:hover {

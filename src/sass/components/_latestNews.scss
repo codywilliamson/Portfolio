@@ -1,5 +1,7 @@
 .latestNewsContainer {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
 
     .textSectionTitle {
         color: $orange;
@@ -13,10 +15,13 @@
 }
 
 .latestNewsImgTextContainer {
+    display: -webkit-box;
     display: flex;
     flex-flow: wrap;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+            justify-content: center;
     border-top: 2px solid $orange;
     padding: 2rem 0;
     margin: 2rem 0;
@@ -47,9 +52,13 @@
 
 .latestNewsTextContainer {
     color: $dark-grey;
+    display: -webkit-box;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
     height: 222px;
     padding: 1rem .3rem
 }
@@ -112,6 +121,8 @@
 
 @media (max-width: 768px) {
     .latestNewsImgTextContainer {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+                flex-direction: column;
     }
 }
