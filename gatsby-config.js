@@ -30,21 +30,10 @@ module.exports = {
         path: `${__dirname}/src`
       }
     },
-    // {
-    //   resolve: `gatsby-plugin-web-font-loader`,         // load self hosted fonts
-    //   options: {
-    //     custom: {
-    //       families: [
-    //         `Minion Pro`
-    //       ],
-    //       urls: [`fonts.css`]
-    //     }
-    //   }
-    // }
   ],
   siteMetadata: {                                       // site details
-    title: `Yooneek`,
-    author: `Mindvolt`,
-    description: `Website for Yooneek Products`
+    title: `codywilliamson`,
+    author: `Cody Williamson`,
+    description: `Website for Web Developer Cody Williamson`
   }
 }

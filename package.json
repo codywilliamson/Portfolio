@@ -1,7 +1,7 @@
 {
-  "name": "Yooneek",
+  "name": "Cody Williamson",
   "private": true,
-  "description": "GatsbyJS site for Yooneek",
+  "description": "GatsbyJS site for Cody Williamson",
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
@@ -38,7 +38,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mindvolt/yooneek.git"
+    "url": "https://github.com/codywilliamson/cwdotcom.git"
   },
   "bugs": {
     "url": "https://github.com/mindvolt/yooneek/issues"

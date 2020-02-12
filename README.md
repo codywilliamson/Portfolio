@@ -1,7 +1,7 @@
 <!-- BEGIN README -->
 <p align="center">
-  <a href="https://yooneek.0kra.com/">
-    <img alt="Yooneek" src="src/assets/logos/yooneekOrange.svg" width="160" />
+  <a href="https://codywilliamson.com">
+    <img alt="Yooneek" src="static/assets/cwdotcom.svg" width="160" />
   </a>
 </p>
 
@@ -41,36 +41,3 @@ A quick look at the top-level files and directories you'll see in this project.
 1. [Configuring React Helmet to manage your site's document head -- SEO purposes](https://www.gatsbyjs.org/tutorial/part-eight/#add-page-metadata)
 1. [Hosting Google Fonts through prefetching instead of relying on external stylesheet](https://www.gatsbyjs.org/packages/gatsby-plugin-prefetch-google-fonts/)
 1. [Emmets support in MD files](https://stackoverflow.com/questions/49956963/markdown-not-using-emmet)
-
-## Get Started
-
-Clone the repo, install dependencies, start dev server
-
-```shell
-    git clone https://github.com/mindvolt/yooneek.git
-    cd yooneek
-    npm install
-    npm run develop
-```
-At
-```
-  localhost:8000
-```
-is your development server.
-
-
-&
-```
-  localhost:8000/___graphql
-```
-is your graphiql playground.
-
-## Issues?
-
-Some common, but not so common issues you might run across:
-
-  * if it has been awhile since you've ran the project, you might have to run ```npm install``` to get going. Sometimes this will throw an ```ELIFECYCLE``` error and running ```gatsby clean``` might say command not found. 
-  
-  If this happens, your npm error message should tell you which plugin broke. For me, it was the sharp/ plugin. Remove this from your node_modules/ folder and reinstall. Then reinstall gatsby-cli. Voila, this should work!
-    * If this didn't work, delete the repo and reclone.
- s

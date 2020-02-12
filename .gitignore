@@ -67,6 +67,3 @@ yarn-error.log
 .pnp.js
 # Yarn Integrity file
 .yarn-integrity
-
-# Yooneek Product Images Folder
-src/products/YooNeek-Products
