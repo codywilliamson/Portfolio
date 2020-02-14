@@ -17,8 +17,8 @@ module.exports = {
       options: {
         fonts: [
           {
-            family: `Lato`,
-            variants: [`300`, `400`, `700`, `900`]
+            family: `Nunito`,
+            variants: [`300`, `400`, `700`]
           },
         ],
       },

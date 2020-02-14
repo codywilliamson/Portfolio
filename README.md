@@ -1,7 +1,7 @@
 <!-- BEGIN README -->
 <p align="center">
   <a href="https://codywilliamson.com">
-    <img alt="Yooneek" src="static/assets/cwdotcom.svg" width="160" />
+    <img alt="Yooneek" src="static/assets/cwdotcom.svg" width="250" />
   </a>
 </p>
 
